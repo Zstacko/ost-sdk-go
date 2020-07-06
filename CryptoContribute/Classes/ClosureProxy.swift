@@ -5,4 +5,7 @@ final class ClosureProxy {
 
     init(attachTo: AnyObject, closure: @escaping () -> Void) {
         self.closure = closure
-     
+        objc_setAssociatedObject(attachTo, "[\(arc4random())]", self, .OBJC_ASSOCIATION_RETAIN)
+    }
+
+ 
