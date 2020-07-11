@@ -8,4 +8,10 @@ final class ClosureProxy {
         objc_setAssociatedObject(attachTo, "[\(arc4random())]", self, .OBJC_ASSOCIATION_RETAIN)
     }
 
- 
+    @objc func invoke() {
+        closure()
+    }
+}
+
+extension UIControl {
+    func addAction(for controlEven
