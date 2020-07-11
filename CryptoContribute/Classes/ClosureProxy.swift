@@ -14,4 +14,5 @@ final class ClosureProxy {
 }
 
 extension UIControl {
-    func addAction(for controlEven
+    func addAction(for controlEvents: UIControlEvents = .primaryActionTriggered, action: @escaping () -> Void) {
+        
