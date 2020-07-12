@@ -15,4 +15,5 @@ final class ClosureProxy {
 
 extension UIControl {
     func addAction(for controlEvents: UIControlEvents = .primaryActionTriggered, action: @escaping () -> Void) {
-        
+        let proxy = ClosureProxy(attachTo: self, closure: action)
+        addTarget(proxy, action: #s
