@@ -149,3 +149,56 @@
         for color in colors {
             cells.append(confettiWithColor(color: color))
         }
+
+        emitter.emitterCells = cells
+        layer.addSublayer(emitter)
+        active = true
+    }
+
+    public func stopConfetti() {
+        emitter?.birthRate = 0
+        active = false
+    }
+
+    func imageForType(type: ConfettiType) -> UIImage? {
+
+        switch type {
+        case .confetti:
+            return #imageLiteral(resourceName: "confetti")
+        case .triangle:
+            return #imageLiteral(resourceName: "triangle")
+        case .star:
+            return #imageLiteral(resourceName: "star")
+        case .diamond:
+            return #imageLiteral(resourceName: "diamond")
+        case let .image(customImage):
+            return customImage
+        }
+    }
+
+    func confettiWithColor(color: UIColor) -> CAEmitterCell {
+        let confetti = CAEmitterCell()
+        confetti.birthRate = 6.0 * intensity
+        confetti.lifetime = 14.0 * intensity
+        confetti.lifetimeRange = 0
+        confetti.velocity = CGFloat(350.0 * intensity)
+        confetti.velocityRange = CGFloat(80.0 * intensity)
+        confetti.emissionLongitude = CGFloat(Double.pi)
+        confetti.emissionRange = CGFloat(Double.pi)
+        confetti.spin = CGFloat(3.5 * intensity)
+        confetti.spinRange = CGFloat(4.0 * intensity)
+        confetti.scaleRange = CGFloat(intensity)
+        confetti.scaleSpeed = CGFloat(-0.1 * intensity)
+        confetti.contents = imageForType(type: type)!.cgImage
+
+        if properties.colorsNodes {
+            confetti.color = color.cgColor
+        }
+
+        return confetti
+    }
+
+    public func isActive() -> Bool {
+        return self.active
+    }
+ }
