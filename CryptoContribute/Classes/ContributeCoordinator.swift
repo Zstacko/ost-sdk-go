@@ -5,4 +5,11 @@ protocol DonateActionDispatching: AnyObject {
 
 public final class DonateCoordinator {
     private let qrDisplayViewController = QRDispalyViewController()
-    public let donationController = DonateViewContr
+    public let donationController = DonateViewController()
+
+    public init() {
+        donationController.dispatcher = self
+    }
+}
+
+ex
