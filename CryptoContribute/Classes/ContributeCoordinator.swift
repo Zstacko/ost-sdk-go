@@ -14,4 +14,11 @@ public final class DonateCoordinator {
 
 extension DonateCoordinator: DonateActionDispatching {
     func dispatch(_ action: DonateViewController.Actions) {
-     
+        switch action {
+        default: return
+        }
+    }
+}
+
+extension DonateCoordinator {
+ 
