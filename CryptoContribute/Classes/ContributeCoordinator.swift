@@ -4,4 +4,5 @@ protocol DonateActionDispatching: AnyObject {
 }
 
 public final class DonateCoordinator {
-    private le
+    private let qrDisplayViewController = QRDispalyViewController()
+    public let donationController = DonateViewContr
