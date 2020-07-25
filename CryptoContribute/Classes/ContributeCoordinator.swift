@@ -25,3 +25,6 @@ extension DonateCoordinator {
         let alert = makeDonateActionSheet(for: currency)
         donationController.present(alert, animated: true, completion: nil)
     }
+
+    private func handleDonation(_ donation: DonateViewController.Actions.Donation) {
+        switc
