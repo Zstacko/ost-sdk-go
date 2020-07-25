@@ -22,4 +22,6 @@ extension DonateCoordinator: DonateActionDispatching {
 
 extension DonateCoordinator {
     private func handleCurrency(_ currency: DonationCurrency) {
-        let alert = makeDonate
+        let alert = makeDonateActionSheet(for: currency)
+        donationController.present(alert, animated: true, completion: nil)
+    }
