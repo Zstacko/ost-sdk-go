@@ -31,4 +31,5 @@ extension DonateCoordinator {
         case let .copyAddress(currency):
             UIPasteboard.general.string = currency.address
             let alert = UIAlertController.confirmationAlert(
-                confirmati
+                confirmationTitle: "Copied.",
+                confirmationMessage: "Wallet address \(currency.address) has been copied t
