@@ -29,4 +29,6 @@ extension DonateCoordinator {
     private func handleDonation(_ donation: DonateViewController.Actions.Donation) {
         switch donation {
         case let .copyAddress(currency):
-            UIPasteboard.general.string = currency
+            UIPasteboard.general.string = currency.address
+            let alert = UIAlertController.confirmationAlert(
+                confirmati
