@@ -32,4 +32,6 @@ extension DonateCoordinator {
             UIPasteboard.general.string = currency.address
             let alert = UIAlertController.confirmationAlert(
                 confirmationTitle: "Copied.",
-                confirmationMessage: "Wallet address \(currency.address) has been copied t
+                confirmationMessage: "Wallet address \(currency.address) has been copied to your clipboard."
+            )
+            donationController.present(alert, animated: true, com
