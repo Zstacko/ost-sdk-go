@@ -34,4 +34,7 @@ extension DonateCoordinator {
                 confirmationTitle: "Copied.",
                 confirmationMessage: "Wallet address \(currency.address) has been copied to your clipboard."
             )
-            donationController.present(alert, animated: true, com
+            donationController.present(alert, animated: true, completion: nil)
+
+        case let .qr(currency):
+            qrDisplayViewController.currency = currency
