@@ -38,4 +38,8 @@ extension DonateCoordinator {
 
         case let .qr(currency):
             qrDisplayViewController.currency = currency
-            donationController.present(UINavigationController(rootViewController: qrDisplayViewController), ani
+            donationController.present(UINavigationController(rootViewController: qrDisplayViewController), animated: true, completion: nil)
+        }
+    }
+
+    private func makeDonateActionSheet(fo
