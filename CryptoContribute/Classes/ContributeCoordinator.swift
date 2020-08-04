@@ -43,4 +43,5 @@ extension DonateCoordinator {
     }
 
     private func makeDonateActionSheet(for currency: DonationCurrency) -> UIAlertController {
-        let alert = UIAlertController(
+        let alert = UIAlertController(title: "Thanks for wanting to help!",
+                                      message: "You can either 
