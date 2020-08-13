@@ -47,4 +47,5 @@ extension DonateCoordinator {
                                       message: "You can either copy my \(currency.title) wallet address, or scan my wallet's QR Code.",
                                       preferredStyle: .actionSheet)
 
-        let copyAction = UIAlertAction(title: "C
+        let copyAction = UIAlertAction(title: "Copy my \(currency.title) address", style: .default) { [weak self] _ in
+            self?.dispatch(.donate(.
