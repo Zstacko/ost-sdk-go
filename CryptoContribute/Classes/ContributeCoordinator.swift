@@ -51,4 +51,5 @@ extension DonateCoordinator {
             self?.dispatch(.donate(.copyAddress(currency)))
         }
 
-        let qrAction = UIAlertAction(title: "Display my \
+        let qrAction = UIAlertAction(title: "Display my \(currency.title) wallet QR code", style: .default) { [weak self] _ in
+            self?.dispatch(.donate
