@@ -48,4 +48,7 @@ extension DonateCoordinator {
                                       preferredStyle: .actionSheet)
 
         let copyAction = UIAlertAction(title: "Copy my \(currency.title) address", style: .default) { [weak self] _ in
-            self?.dispatch(.donate(.
+            self?.dispatch(.donate(.copyAddress(currency)))
+        }
+
+        let qrAction = UIAlertAction(title: "Display my \
