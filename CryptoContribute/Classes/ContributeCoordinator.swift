@@ -58,4 +58,9 @@ extension DonateCoordinator {
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
 
         [copyAction, qrAction, cancelAction].forEach { action in
-         
+            alert.addAction(action)
+        }
+
+        return alert
+    }
+}
