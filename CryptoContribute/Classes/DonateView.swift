@@ -1,2 +1,6 @@
 import UIKit
-import Ancho
+import Anchorage
+
+final class DonateView: UIView {
+    weak var dispatcher: DonateActionDispatching?
+    let btc = UIBu
