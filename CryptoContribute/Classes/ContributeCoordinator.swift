@@ -55,4 +55,7 @@ extension DonateCoordinator {
             self?.dispatch(.donate(.qr(currency)))
         }
 
-        let cancelAction = UIAlertAction(title: "Cancel", style
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
+        [copyAction, qrAction, cancelAction].forEach { action in
+         
