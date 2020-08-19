@@ -8,4 +8,6 @@ final class DonateView: UIView {
     let ltc = UIButton()
     let stack = UIStackView()
 
-    override in
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        btc.setImage(UIImage(podAssetName: "btc"), for: .norm
