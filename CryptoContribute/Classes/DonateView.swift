@@ -14,4 +14,7 @@ final class DonateView: UIView {
         btc.contentMode = .scaleAspectFit
 
         btc.addAction { [weak self] in
-            self?.d
+            self?.dispatcher?.dispatch(.presentDonationOptions(.btc))
+        }
+
+        eth.setImage(UIImage(podAssetName: "
