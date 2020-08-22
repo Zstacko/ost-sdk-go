@@ -10,4 +10,8 @@ final class DonateView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        btc.setImage(UIImage(podAssetName: "btc"), for: .norm
+        btc.setImage(UIImage(podAssetName: "btc"), for: .normal)
+        btc.contentMode = .scaleAspectFit
+
+        btc.addAction { [weak self] in
+            self?.d
