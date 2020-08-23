@@ -17,4 +17,8 @@ final class DonateView: UIView {
             self?.dispatcher?.dispatch(.presentDonationOptions(.btc))
         }
 
-        eth.setImage(UIImage(podAssetName: "
+        eth.setImage(UIImage(podAssetName: "eth"), for: .normal)
+        eth.contentMode = .scaleAspectFit
+
+        eth.addAction { [weak self] in
+         
