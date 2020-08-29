@@ -21,4 +21,7 @@ final class DonateView: UIView {
         eth.contentMode = .scaleAspectFit
 
         eth.addAction { [weak self] in
-         
+            self?.dispatcher?.dispatch(.presentDonationOptions(.eth))
+        }
+
+        ltc.setImage(UIImage(
