@@ -27,4 +27,8 @@ final class DonateView: UIView {
         ltc.setImage(UIImage(podAssetName: "litecoin"), for: .normal)
         ltc.contentMode = .scaleAspectFit
 
-        ltc.addAction { [we
+        ltc.addAction { [weak self] in
+            self?.dispatcher?.dispatch(.presentDonationOptions(.ltc))
+        }
+
+        
