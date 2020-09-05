@@ -31,4 +31,6 @@ final class DonateView: UIView {
             self?.dispatcher?.dispatch(.presentDonationOptions(.ltc))
         }
 
-        
+        [btc, eth, ltc].forEach { button in
+            let container = UIView()
+            contain
