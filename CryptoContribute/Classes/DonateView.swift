@@ -33,4 +33,6 @@ final class DonateView: UIView {
 
         [btc, eth, ltc].forEach { button in
             let container = UIView()
-            contain
+            container.backgroundColor = .white
+            container.layer.cornerRadius = 8
+            container.addSubview(button
