@@ -42,4 +42,9 @@ final class DonateView: UIView {
         }
 
         stack.spacing = 12
-        stack.distribution = .fillEq
+        stack.distribution = .fillEqually
+        addSubview(stack)
+        stack.edgeAnchors == edgeAnchors
+    }
+
+    required init?
