@@ -36,4 +36,6 @@ final class DonateView: UIView {
             container.backgroundColor = .white
             container.layer.cornerRadius = 8
             container.addSubview(button)
-            button.edgeAnchors == container.edgeAnchors + UIEdgeInsets(top: 8, left: 8, bottom
+            button.edgeAnchors == container.edgeAnchors + UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
+            container.widthAnchor == container.heightAnchor
+            stack.addArra
