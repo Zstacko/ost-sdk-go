@@ -104,3 +104,27 @@ public final class DonateViewController: UIViewController {
         if #available(iOS 11.0, *) {
             dismiss.bottomAnchor == view.safeAreaLayoutGuide.bottomAnchor
         } else {
+            // Fallback on earlier versions
+        }
+
+        dismiss.heightAnchor == 50
+        dismiss.setTitle("Get me outa here!", for: .normal)
+        dismiss.addTarget(self, action: #selector(didTapDismiss), for: .touchUpInside)
+    }
+
+    override public func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIView.animate(withDuration: 1, delay: 0.5, options: [.autoreverse, .repeat], animations: {
+            self.party.transform = .identity
+        })
+    }
+
+    override public func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        party.transform = CGAffineTransform(scaleX: 0.7, y: 0.7)
+    }
+
+    @objc private func didTapDismiss() {
+        dismiss(animated: true, completion: nil)
+    }
+}
