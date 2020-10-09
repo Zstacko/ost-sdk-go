@@ -5,4 +5,8 @@ extension UIImage {
         /// A given class within your Pod framework
         guard let url = podBundle.url(forResource: "CryptoContribute",
                                       withExtension: "bundle") else {
-                                        retur
+                                        return nil
+                                        
+        }
+        
+        self.init(named: pod
