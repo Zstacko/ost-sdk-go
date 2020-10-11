@@ -9,4 +9,9 @@
 import UIKit
 
 @UIApplicationMain
-class AppDe
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+
+    func application(_ application: UIAppl
