@@ -12,4 +12,5 @@ extension UIImage {
         self.init(named: podAssetName,
                   in: Bundle(url: url),
                   compatibleWith: nil)
- 
+    }
+}
