@@ -27,3 +27,19 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alexander Murphy' => 'alex.murphy@ibotta.com' }
   s.source           = { :git => 'https://github.com/Alexander Murphy/CryptoContribute.git', :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+
+  s.ios.deployment_target = '9.0'
+
+  s.source_files = 'CryptoContribute/Classes/**/*'
+  
+   s.resource_bundles = {
+     'CryptoContribute' => ['CryptoContribute/Assets/Assets.xcassets']
+   }
+
+  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.frameworks = 'UIKit'
+   s.dependency 'Anchorage'
+   s.dependency 'QRCode'
+   # s.dependency 'SAConfettiView'
+end
