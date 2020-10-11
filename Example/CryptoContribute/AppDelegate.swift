@@ -3,4 +3,10 @@
 //  CryptoContribute
 //
 //  Created by Alexander Murphy on 08/15/2018.
-//  Copyr
+//  Copyright (c) 2018 Alexander Murphy. All rights reserved.
+//
+
+import UIKit
+
+@UIApplicationMain
+class AppDe
