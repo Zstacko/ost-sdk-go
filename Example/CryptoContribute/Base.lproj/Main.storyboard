@@ -12,4 +12,4 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewControl
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CryptoContribute_Example" customModuleProvider="target" sceneMemberID="viewController">
