@@ -1,3 +1,6 @@
 //
 //  ViewController.swift
-//  CryptoCon
+//  CryptoContribute
+//
+//  Created by Alexander Murphy on 08/15/2018.
+//  Copyright (c) 2018 Alexander Murphy. All rights reser
