@@ -10,4 +10,9 @@ import UIKit
 import CryptoContribute
 
 class ViewController: UIViewController {
-    let coordinator = D
+    let coordinator = DonateCoordinator()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+
