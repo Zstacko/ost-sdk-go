@@ -18,4 +18,7 @@ class ViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        presen
+        present(coordinator.donationController, animated: true, completion: nil)
+    }
+}
+
