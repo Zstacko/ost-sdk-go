@@ -2,4 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      lo
+      location = "group:CryptoContribute.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Po
