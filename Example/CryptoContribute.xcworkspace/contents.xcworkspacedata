@@ -5,4 +5,6 @@
       location = "group:CryptoContribute.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Po
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
