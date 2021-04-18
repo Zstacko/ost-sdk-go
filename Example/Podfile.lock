@@ -11,4 +11,11 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Anchorage
-    - QRCo
+    - QRCode
+
+EXTERNAL SOURCES:
+  CryptoContribute:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Anchorage: f855157310859280
