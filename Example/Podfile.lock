@@ -1,3 +1,9 @@
 PODS:
   - Anchorage (4.2.4)
-  - CryptoC
+  - CryptoContribute (0.1.0):
+    - Anchorage
+    - QRCode
+  - QRCode (2.0)
+
+DEPENDENCIES:
+  - CryptoContribu
