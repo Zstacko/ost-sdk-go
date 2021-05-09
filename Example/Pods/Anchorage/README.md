@@ -8,4 +8,10 @@
 
 A lightweight collection of intuitive operators and utilities that simplify Auto Layout code. Anchorage is built directly on top of the `NSLayoutAnchor` API.
 
-Each expression acts on one or more `NSLayoutAnchor`s, and returns active `NSLayoutConstraint`s. If you wan
+Each expression acts on one or more `NSLayoutAnchor`s, and returns active `NSLayoutConstraint`s. If you want inactive constraints, [here's how to do that](#batching-constraints).
+
+# Usage
+
+## Alignment
+
+```swift
