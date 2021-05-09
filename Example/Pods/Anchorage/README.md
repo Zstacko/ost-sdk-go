@@ -16,4 +16,7 @@ Each expression acts on one or more `NSLayoutAnchor`s, and returns active `NSLay
 
 ```swift
 // Pin the button to 12 pt from the leading edge of its container
-button.leadingAnchor == container.le
+button.leadingAnchor == container.leadingAnchor + 12
+
+// Pin the button to at least 12 pt from the trailing edge of its container
+button
