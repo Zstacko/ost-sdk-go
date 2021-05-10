@@ -19,4 +19,7 @@ Each expression acts on one or more `NSLayoutAnchor`s, and returns active `NSLay
 button.leadingAnchor == container.leadingAnchor + 12
 
 // Pin the button to at least 12 pt from the trailing edge of its container
-button
+button.trailingAnchor <= container.trailingAnchor - 12
+
+// Center one or both axes of a view
+button.centerXAncho
