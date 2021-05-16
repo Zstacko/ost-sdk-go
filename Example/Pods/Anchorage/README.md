@@ -29,4 +29,7 @@ button.centerAnchors == container.centerAnchors
 ## Relative Alignment
 
 ```swift
-// Position a view to be centered at 2/3 of its container's widt
+// Position a view to be centered at 2/3 of its container's width
+view.centerXAnchor == 2 * container.trailingAnchor / 3
+
+// Pin the top of a view at 25% of co
