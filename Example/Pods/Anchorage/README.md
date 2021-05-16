@@ -32,4 +32,11 @@ button.centerAnchors == container.centerAnchors
 // Position a view to be centered at 2/3 of its container's width
 view.centerXAnchor == 2 * container.trailingAnchor / 3
 
-// Pin the top of a view at 25% of co
+// Pin the top of a view at 25% of container's height
+view.topAnchor == container.bottomAnchor / 4
+```
+
+## Sizing
+
+```swift
+// Constrain a view's 
