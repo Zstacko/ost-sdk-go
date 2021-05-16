@@ -22,4 +22,8 @@ button.leadingAnchor == container.leadingAnchor + 12
 button.trailingAnchor <= container.trailingAnchor - 12
 
 // Center one or both axes of a view
-button.centerXAncho
+button.centerXAnchor == container.centerXAnchor
+button.centerAnchors == container.centerAnchors
+```
+
+## Rel
