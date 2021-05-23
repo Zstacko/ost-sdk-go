@@ -39,4 +39,8 @@ view.topAnchor == container.bottomAnchor / 4
 ## Sizing
 
 ```swift
-// Constrain a view's 
+// Constrain a view's width to be at most 100 pt
+view.widthAnchor <= 100
+
+// Constraint a view to a fixed size
+imageView.sizeAnc
