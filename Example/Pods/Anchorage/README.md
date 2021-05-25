@@ -43,4 +43,7 @@ view.topAnchor == container.bottomAnchor / 4
 view.widthAnchor <= 100
 
 // Constraint a view to a fixed size
-imageView.sizeAnc
+imageView.sizeAnchors == CGSize(width: 100, height: 200)
+
+// Constrain two views to be the same size
+im
