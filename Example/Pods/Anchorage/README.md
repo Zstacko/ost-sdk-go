@@ -46,4 +46,7 @@ view.widthAnchor <= 100
 imageView.sizeAnchors == CGSize(width: 100, height: 200)
 
 // Constrain two views to be the same size
-im
+imageView.sizeAnchors == view.sizeAnchors
+
+// Constrain view to 4:3 aspect ratio
+view.widthAnchor == 4 * vi
