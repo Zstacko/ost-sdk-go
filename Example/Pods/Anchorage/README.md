@@ -49,4 +49,9 @@ imageView.sizeAnchors == CGSize(width: 100, height: 200)
 imageView.sizeAnchors == view.sizeAnchors
 
 // Constrain view to 4:3 aspect ratio
-view.widthAnchor == 4 * vi
+view.widthAnchor == 4 * view.heightAnchor / 3
+```
+
+## Composite Anchors
+
+Constrain multiple edges at a time with this synta
