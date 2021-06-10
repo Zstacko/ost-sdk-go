@@ -58,4 +58,7 @@ Constrain multiple edges at a time with this syntax:
 
 ```swift
 // Constrain the leading, trailing, top and bottom edges to be equal
-imageView.edgeAnchors == c
+imageView.edgeAnchors == container.edgeAnchors
+
+// Inset the edges of a view from another view
+let insets = UIEdgeInsets(top: 5, l
