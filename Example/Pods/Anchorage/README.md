@@ -62,4 +62,7 @@ imageView.edgeAnchors == container.edgeAnchors
 
 // Inset the edges of a view from another view
 let insets = UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20)
-imageView.edgeAnchors == container.edgeAnchors + 
+imageView.edgeAnchors == container.edgeAnchors + insets
+
+// Inset the leading and trailing anchors by 10
+imageView.horizontalAnchors >= container.
