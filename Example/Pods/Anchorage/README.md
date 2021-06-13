@@ -65,4 +65,7 @@ let insets = UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20)
 imageView.edgeAnchors == container.edgeAnchors + insets
 
 // Inset the leading and trailing anchors by 10
-imageView.horizontalAnchors >= container.
+imageView.horizontalAnchors >= container.horizontalAnchors + 10
+
+// Inset the top and bottom anchors by 10
+imageView.verticalAnchors >= container.vertic
