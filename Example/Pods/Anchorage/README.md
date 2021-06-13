@@ -61,4 +61,5 @@ Constrain multiple edges at a time with this syntax:
 imageView.edgeAnchors == container.edgeAnchors
 
 // Inset the edges of a view from another view
-let insets = UIEdgeInsets(top: 5, l
+let insets = UIEdgeInsets(top: 5, left: 10, bottom: 15, right: 20)
+imageView.edgeAnchors == container.edgeAnchors + 
