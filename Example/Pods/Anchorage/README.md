@@ -68,4 +68,8 @@ imageView.edgeAnchors == container.edgeAnchors + insets
 imageView.horizontalAnchors >= container.horizontalAnchors + 10
 
 // Inset the top and bottom anchors by 10
-imageView.verticalAnchors >= container.vertic
+imageView.verticalAnchors >= container.verticalAnchors + 10
+```
+
+#### Use leading and trailing
+Using `leftAnchor` and `rightAnchor` is rare
