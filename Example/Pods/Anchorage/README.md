@@ -72,4 +72,4 @@ imageView.verticalAnchors >= container.verticalAnchors + 10
 ```
 
 #### Use leading and trailing
-Using `leftAnchor` and `rightAnchor` is rare
+Using `leftAnchor` and `rightAnchor` is rarely the right choice. To encourage this, `horizontalAnchors` and `edgeAnchors` use the `leadingAnchor` and `t
