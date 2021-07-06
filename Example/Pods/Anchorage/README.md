@@ -83,4 +83,7 @@ When constraining leading/trailing or top/bottom, it is far more common to work 
 The `~` is used to specify priority of the constraint resulting from any Anchorage expression:
 
 ```swift
-// Align view 20 points from the center of its superview, with system-defin
+// Align view 20 points from the center of its superview, with system-defined low priority
+view.centerXAnchor == view.superview.centerXAnchor + 20 ~ .low
+
+// Align view 20 p
