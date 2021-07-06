@@ -86,4 +86,5 @@ The `~` is used to specify priority of the constraint resulting from any Anchora
 // Align view 20 points from the center of its superview, with system-defined low priority
 view.centerXAnchor == view.superview.centerXAnchor + 20 ~ .low
 
-// Align view 20 p
+// Align view 20 points from the center of its superview, with (required - 1) priority
+view.centerXAnchor == view.supervi
