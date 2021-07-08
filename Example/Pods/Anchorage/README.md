@@ -90,4 +90,6 @@ view.centerXAnchor == view.superview.centerXAnchor + 20 ~ .low
 view.centerXAnchor == view.superview.centerXAnchor + 20 ~ .required - 1
 
 // Align view 20 points from the center of its superview, with custom priority
-view.
+view.centerXAnchor == view.superview.centerXAnchor + 20 ~ 752
+```
+The layout priority is an enum with the followin
