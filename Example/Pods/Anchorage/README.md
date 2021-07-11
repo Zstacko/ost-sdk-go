@@ -95,4 +95,6 @@ view.centerXAnchor == view.superview.centerXAnchor + 20 ~ 752
 The layout priority is an enum with the following values:
 
 - `.required` - `UILayoutPriorityRequired` (default)
-- `.high` - `UILayoutPriorityDefaultHi
+- `.high` - `UILayoutPriorityDefaultHigh`
+- `.low` - `UILayoutPriorityDefaultLow`
+- `.fittingSize` - `UILayoutPriorityFitting
