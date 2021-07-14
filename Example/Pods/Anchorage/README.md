@@ -97,4 +97,8 @@ The layout priority is an enum with the following values:
 - `.required` - `UILayoutPriorityRequired` (default)
 - `.high` - `UILayoutPriorityDefaultHigh`
 - `.low` - `UILayoutPriorityDefaultLow`
-- `.fittingSize` - `UILayoutPriorityFitting
+- `.fittingSize` - `UILayoutPriorityFittingSizeLevel`
+
+## Storing Constraints
+
+To store constraints created by Anchorage, simply assign the express
