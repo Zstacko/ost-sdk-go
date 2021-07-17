@@ -108,4 +108,5 @@ To store constraints created by Anchorage, simply assign the expression to a var
 let topConstraint = (imageView.topAnchor == container.topAnchor)
 
 // EdgeConstraints represents a collection of constraints
-// You can ret
+// You can retrieve the NSLayoutConstraints individually,
+// or get an [NSLayoutConstraint] via .all, .horizontal, or .ve
