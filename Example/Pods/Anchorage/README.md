@@ -101,4 +101,8 @@ The layout priority is an enum with the following values:
 
 ## Storing Constraints
 
-To store constraints created by Anchorage, simply assign the express
+To store constraints created by Anchorage, simply assign the expression to a variable:
+
+```swift
+// A single (active) NSLayoutConstraint
+let topConstraint = (imageView.topA
