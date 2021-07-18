@@ -113,4 +113,6 @@ let topConstraint = (imageView.topAnchor == container.topAnchor)
 let edgeConstraints = (button.edgeAnchors == container.edgeAnchors).all
 ```
 
-## Batching Constrai
+## Batching Constraints
+
+By default, Anchorage returns active layout constraints. If you'd rather return inactive constraints for us
