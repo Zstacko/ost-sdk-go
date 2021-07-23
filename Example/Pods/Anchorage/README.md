@@ -115,4 +115,4 @@ let edgeConstraints = (button.edgeAnchors == container.edgeAnchors).all
 
 ## Batching Constraints
 
-By default, Anchorage returns active layout constraints. If you'd rather return inactive constraints for us
+By default, Anchorage returns active layout constraints. If you'd rather return inactive constraints for use with the [`NSLayoutConstraint.activate(_:)` method](https://developer.apple.com/reference/uikit/
