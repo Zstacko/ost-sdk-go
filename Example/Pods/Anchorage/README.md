@@ -119,4 +119,6 @@ By default, Anchorage returns active layout constraints. If you'd rather return 
 
 ```swift
 let constraints = Anchorage.batch(active: false) {
-    view1.widthAnchor == view2.width
+    view1.widthAnchor == view2.widthAnchor
+    view1.heightAnchor == view2.heightAnchor / 2 ~ .low
+    // ... as many constraints a
