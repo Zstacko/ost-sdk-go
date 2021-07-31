@@ -128,4 +128,8 @@ let constraints = Anchorage.batch(active: false) {
 NSLayoutConstraint.activate(constraints)
 ```
 
-You can also pass `active: true` if you want the constraints in the array to be automatically activated in a 
+You can also pass `active: true` if you want the constraints in the array to be automatically activated in a batch.
+
+## Autoresizing Mask
+
+Anchorage sets the `translatesAutoresizingMaskIntoConstrain
