@@ -132,4 +132,4 @@ You can also pass `active: true` if you want the constraints in the array to be 
 
 ## Autoresizing Mask
 
-Anchorage sets the `translatesAutoresizingMaskIntoConstrain
+Anchorage sets the `translatesAutoresizingMaskIntoConstraints` property to `false` on the *left* hand side of the expression, so you should never need to set th
