@@ -138,4 +138,8 @@ Anchorage sets the `translatesAutoresizingMaskIntoConstraints` property to `fals
 
 ## CocoaPods
 
-To i
+To integrate Anchorage into your Xcode project using CocoaPods, specify it in
+your Podfile:
+
+```ruby
+pod 'Anc
