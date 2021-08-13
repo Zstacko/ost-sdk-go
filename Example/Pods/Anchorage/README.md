@@ -147,4 +147,11 @@ pod 'Anchorage'
 
 ## Carthage
 
-To integrate Anchorage into your Xcode project using Carthage, specify 
+To integrate Anchorage into your Xcode project using Carthage, specify it in
+your Cartfile:
+
+```ogdl
+github "Raizlabs/Anchorage"
+```
+
+Run `carthage update` to build the framework and dr
