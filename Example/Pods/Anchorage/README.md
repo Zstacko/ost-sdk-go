@@ -142,4 +142,9 @@ To integrate Anchorage into your Xcode project using CocoaPods, specify it in
 your Podfile:
 
 ```ruby
-pod 'Anc
+pod 'Anchorage'
+```
+
+## Carthage
+
+To integrate Anchorage into your Xcode project using Carthage, specify 
