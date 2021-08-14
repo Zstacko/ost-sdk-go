@@ -159,4 +159,6 @@ Run `carthage update` to build the framework and drag the built
 
 # License
 
-This code and tool 
+This code and tool is under the MIT License. See `LICENSE` file in this repository.
+
+Any ideas and contributions w
