@@ -154,4 +154,9 @@ your Cartfile:
 github "Raizlabs/Anchorage"
 ```
 
-Run `carthage update` to build the framework and dr
+Run `carthage update` to build the framework and drag the built
+`Anchorage.framework` into your Xcode project.
+
+# License
+
+This code and tool 
