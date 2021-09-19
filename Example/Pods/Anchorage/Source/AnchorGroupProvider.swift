@@ -32,4 +32,7 @@
     import UIKit
 #endif
 
-public protocol AnchorGroupProv
+public protocol AnchorGroupProvider {
+
+    var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> { get }
+    var
