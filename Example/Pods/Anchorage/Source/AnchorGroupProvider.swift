@@ -36,4 +36,5 @@ public protocol AnchorGroupProvider {
 
     var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> { get }
     var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor> { get }
-    var centerAnchors
+    var centerAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutYAxisAnchor> { get }
+    var sizeAnchors: AnchorPair<NSLayoutDi
