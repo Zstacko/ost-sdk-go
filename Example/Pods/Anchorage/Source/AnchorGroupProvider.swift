@@ -44,4 +44,11 @@ public protocol AnchorGroupProvider {
 extension AnchorGroupProvider {
 
     public var edgeAnchors: EdgeAnchors {
-        return EdgeAnchors(horizontal: horizontalAnchors, vertical: verticalAnc
+        return EdgeAnchors(horizontal: horizontalAnchors, vertical: verticalAnchors)
+    }
+
+}
+
+extension View: AnchorGroupProvider {
+
+    public var horizontalAnchors: AnchorPair<
