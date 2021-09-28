@@ -51,4 +51,5 @@ extension AnchorGroupProvider {
 
 extension View: AnchorGroupProvider {
 
-    public var horizontalAnchors: AnchorPair<
+    public var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> {
+        return AnchorPair(first: leadingAnchor, second: trail
