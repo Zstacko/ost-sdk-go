@@ -55,4 +55,8 @@ extension View: AnchorGroupProvider {
         return AnchorPair(first: leadingAnchor, second: trailingAnchor)
     }
 
-    public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxis
+    public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor> {
+        return AnchorPair(first: topAnchor, second: bottomAnchor)
+    }
+
+    public var centerAnchors: 
