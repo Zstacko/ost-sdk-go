@@ -60,4 +60,7 @@ extension View: AnchorGroupProvider {
     }
 
     public var centerAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutYAxisAnchor> {
-        return AnchorPair(first: centerX
+        return AnchorPair(first: centerXAnchor, second: centerYAnchor)
+    }
+
+    public var sizeAnchors: AnchorPair<NSLayoutDimension, 
