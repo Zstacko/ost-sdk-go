@@ -64,4 +64,11 @@ extension View: AnchorGroupProvider {
     }
 
     public var sizeAnchors: AnchorPair<NSLayoutDimension, NSLayoutDimension> {
-        return AnchorPair(first: widthAnchor, second: heightAnchor
+        return AnchorPair(first: widthAnchor, second: heightAnchor)
+    }
+
+}
+
+extension ViewController: AnchorGroupProvider {
+
+    public var horizontalAnchors: AnchorPair<NSLayoutXA
