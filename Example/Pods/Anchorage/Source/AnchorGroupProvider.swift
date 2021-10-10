@@ -71,4 +71,8 @@ extension View: AnchorGroupProvider {
 
 extension ViewController: AnchorGroupProvider {
 
-    public var horizontalAnchors: AnchorPair<NSLayoutXA
+    public var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> {
+        return view.horizontalAnchors
+    }
+
+    public var v
