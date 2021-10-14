@@ -79,4 +79,8 @@ extension ViewController: AnchorGroupProvider {
 #if os(macOS)
         return view.verticalAnchors
 #else
-        return AnchorPair(first: topLayoutGuide.bottomAnc
+        return AnchorPair(first: topLayoutGuide.bottomAnchor, second: bottomLayoutGuide.topAnchor)
+#endif
+    }
+
+    public var centerAnchors: AnchorPair<NSLayoutXAxi
