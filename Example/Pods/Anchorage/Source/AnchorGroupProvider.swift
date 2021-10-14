@@ -77,4 +77,6 @@ extension ViewController: AnchorGroupProvider {
 
     public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor> {
 #if os(macOS)
-        return view
+        return view.verticalAnchors
+#else
+        return AnchorPair(first: topLayoutGuide.bottomAnc
