@@ -83,4 +83,8 @@ extension ViewController: AnchorGroupProvider {
 #endif
     }
 
-    public var centerAnchors: AnchorPair<NSLayoutXAxi
+    public var centerAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutYAxisAnchor> {
+        return view.centerAnchors
+    }
+
+    p
