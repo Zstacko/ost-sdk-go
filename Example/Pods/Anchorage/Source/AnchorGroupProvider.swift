@@ -87,4 +87,5 @@ extension ViewController: AnchorGroupProvider {
         return view.centerAnchors
     }
 
-    p
+    public var sizeAnchors: AnchorPair<NSLayoutDimension, NSLayoutDimension> {
+        return view.si
