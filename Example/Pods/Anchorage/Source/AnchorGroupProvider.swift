@@ -88,4 +88,11 @@ extension ViewController: AnchorGroupProvider {
     }
 
     public var sizeAnchors: AnchorPair<NSLayoutDimension, NSLayoutDimension> {
-        return view.si
+        return view.sizeAnchors
+    }
+
+}
+
+extension LayoutGuide: AnchorGroupProvider {
+
+    public var horizontalAnc
