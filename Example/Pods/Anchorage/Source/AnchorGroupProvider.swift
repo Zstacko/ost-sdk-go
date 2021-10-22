@@ -95,4 +95,5 @@ extension ViewController: AnchorGroupProvider {
 
 extension LayoutGuide: AnchorGroupProvider {
 
-    public var horizontalAnc
+    public var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> {
+        return Anc
