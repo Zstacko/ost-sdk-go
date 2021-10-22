@@ -96,4 +96,7 @@ extension ViewController: AnchorGroupProvider {
 extension LayoutGuide: AnchorGroupProvider {
 
     public var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor> {
-        return Anc
+        return AnchorPair(first: leadingAnchor, second: trailingAnchor)
+    }
+
+    public var verticalAnchors: AnchorPai
