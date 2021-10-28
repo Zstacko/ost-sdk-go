@@ -99,4 +99,5 @@ extension LayoutGuide: AnchorGroupProvider {
         return AnchorPair(first: leadingAnchor, second: trailingAnchor)
     }
 
-    public var verticalAnchors: AnchorPai
+    public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor> {
+        return AnchorPair(first: topAnchor, second: bottomA
