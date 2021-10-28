@@ -100,4 +100,7 @@ extension LayoutGuide: AnchorGroupProvider {
     }
 
     public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor> {
-        return AnchorPair(first: topAnchor, second: bottomA
+        return AnchorPair(first: topAnchor, second: bottomAnchor)
+    }
+
+    public var centerAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutYAxisAnchor> {
