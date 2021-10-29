@@ -107,4 +107,5 @@ extension LayoutGuide: AnchorGroupProvider {
         return AnchorPair(first: centerXAnchor, second: centerYAnchor)
     }
 
-    public var sizeAncho
+    public var sizeAnchors: AnchorPair<NSLayoutDimension, NSLayoutDimension> {
+        return AnchorPair(first: widthAnchor,
