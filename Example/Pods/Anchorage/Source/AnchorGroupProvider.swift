@@ -108,4 +108,11 @@ extension LayoutGuide: AnchorGroupProvider {
     }
 
     public var sizeAnchors: AnchorPair<NSLayoutDimension, NSLayoutDimension> {
-        return AnchorPair(first: widthAnchor,
+        return AnchorPair(first: widthAnchor, second: heightAnchor)
+    }
+
+}
+
+// MARK: - EdgeAnchors
+
+public struct EdgeAnchors: LayoutAnchorType {
