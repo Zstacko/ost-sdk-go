@@ -118,4 +118,9 @@ extension LayoutGuide: AnchorGroupProvider {
 public struct EdgeAnchors: LayoutAnchorType {
 
     public var horizontalAnchors: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor>
-    public var ve
+    public var verticalAnchors: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor>
+
+}
+
+// MARK: - Axis Group
+
