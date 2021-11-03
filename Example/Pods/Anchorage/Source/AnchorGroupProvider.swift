@@ -127,4 +127,12 @@ public struct EdgeAnchors: LayoutAnchorType {
 public struct ConstraintPair {
 
     public var first: NSLayoutConstraint
-    public var second: NSLayoutCo
+    public var second: NSLayoutConstraint
+
+}
+
+// MARK: - ConstraintGroup
+
+public struct ConstraintGroup {
+
+    public var top: NSLayoutConstra
