@@ -124,3 +124,7 @@ public struct EdgeAnchors: LayoutAnchorType {
 
 // MARK: - Axis Group
 
+public struct ConstraintPair {
+
+    public var first: NSLayoutConstraint
+    public var second: NSLayoutCo
