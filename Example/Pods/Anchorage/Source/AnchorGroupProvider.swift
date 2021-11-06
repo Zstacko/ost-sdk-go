@@ -135,4 +135,7 @@ public struct ConstraintPair {
 
 public struct ConstraintGroup {
 
-    public var top: NSLayoutConstra
+    public var top: NSLayoutConstraint
+    public var leading: NSLayoutConstraint
+    public var bottom: NSLayoutConstraint
+    pub
