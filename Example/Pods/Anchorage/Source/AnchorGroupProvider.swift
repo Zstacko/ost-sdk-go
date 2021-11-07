@@ -138,4 +138,7 @@ public struct ConstraintGroup {
     public var top: NSLayoutConstraint
     public var leading: NSLayoutConstraint
     public var bottom: NSLayoutConstraint
-    pub
+    public var trailing: NSLayoutConstraint
+
+    public var horizontal: [NSLayoutConstraint] {
+       
