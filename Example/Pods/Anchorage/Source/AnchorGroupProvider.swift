@@ -149,4 +149,7 @@ public struct ConstraintGroup {
     }
 
     public var all: [NSLayoutConstraint] {
-        return [top, leading, 
+        return [top, leading, bottom, trailing]
+    }
+
+}
