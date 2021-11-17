@@ -389,3 +389,38 @@ infix operator ~: PriorityPrecedence
     expr.constant -= CGFloat(lhs)
     return expr
 }
+
+@discardableResult public func - (lhs: EdgeAnchors, rhs: EdgeInsets) -> LayoutExpression<EdgeAnchors, EdgeInsets> {
+    return LayoutExpression(anchor: lhs, constant: -rhs)
+}
+
+// MARK: - Batching
+
+/// Any Anchorage constraints created inside the passed closure are returned in the array.
+///
+/// - Parameter closure: A closure that runs some Anchorage expressions.
+/// - Returns: An array of new, active `NSLayoutConstraint`s.
+@discardableResult public func batch(_ closure: () -> Void) -> [NSLayoutConstraint] {
+    return batch(active: true, closure: closure)
+}
+
+/// Any Anchorage constraints created inside the passed closure are returned in the array.
+///
+/// - Parameter active: Whether the created constraints should be active when they are returned.
+/// - Parameter closure: A closure that runs some Anchorage expressions.
+/// - Returns: An array of new `NSLayoutConstraint`s.
+public func batch(active: Bool, closure: () -> Void) -> [NSLayoutConstraint] {
+    let batch = ConstraintBatch()
+    batches.append(batch)
+    defer {
+        batches.removeLast()
+    }
+
+    closure()
+
+    if active {
+        batch.activate()
+    }
+
+    return batch.constraints
+}
