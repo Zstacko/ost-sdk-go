@@ -7,4 +7,6 @@
 //  Copyright 2016 Raizlabs and other contributors
 //  http://raizlabs.com/
 //
-//  Permission is hereby granted, fr
+//  Permission is hereby granted, free of charge, to any person obtaining
+//  a copy of this software and associated documentation files (the
+//
