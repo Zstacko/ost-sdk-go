@@ -30,4 +30,5 @@
     import Cocoa
 
     #if swift(>=4.0)
-  
+        public typealias LayoutPriority = NSLayoutConstraint.Priority
+        public ty
