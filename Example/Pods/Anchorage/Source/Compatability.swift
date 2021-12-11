@@ -31,4 +31,7 @@
 
     #if swift(>=4.0)
         public typealias LayoutPriority = NSLayoutConstraint.Priority
-        public ty
+        public typealias EdgeInsets = NSEdgeInsets
+    #else
+        public typealias LayoutPriority = NSLayoutPriority
+ 
