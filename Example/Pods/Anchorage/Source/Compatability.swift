@@ -34,4 +34,9 @@
         public typealias EdgeInsets = NSEdgeInsets
     #else
         public typealias LayoutPriority = NSLayoutPriority
- 
+    #endif
+#else
+    import UIKit
+
+    public typealias LayoutPriority = UILayoutPriority
+    public typea
