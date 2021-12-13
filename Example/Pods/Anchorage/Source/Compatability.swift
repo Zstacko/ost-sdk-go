@@ -39,4 +39,8 @@
     import UIKit
 
     public typealias LayoutPriority = UILayoutPriority
-    public typea
+    public typealias EdgeInsets = UIEdgeInsets
+#endif
+
+#if swift(>=4.2) || (os(macOS) && swift(>=4.0))
+    public typealias Con
