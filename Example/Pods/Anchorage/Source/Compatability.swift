@@ -52,4 +52,10 @@
 #else
     extension LayoutPriority {
 
-        var
+        var rawValue: Float {
+            return self
+        }
+
+        init(rawValue: Float) {
+            self.init(rawValue)
+   
