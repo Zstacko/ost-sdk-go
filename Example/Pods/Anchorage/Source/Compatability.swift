@@ -45,4 +45,11 @@
 #if swift(>=4.2) || (os(macOS) && swift(>=4.0))
     public typealias ConstraintAttribute = NSLayoutConstraint.Attribute
 #else
-    public typealias ConstraintAttr
+    public typealias ConstraintAttribute = NSLayoutAttribute
+#endif
+
+#if swift(>=4.0)
+#else
+    extension LayoutPriority {
+
+        var
