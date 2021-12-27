@@ -58,4 +58,10 @@
 
         init(rawValue: Float) {
             self.init(rawValue)
-   
+        }
+    }
+#endif
+
+extension CGFloat {
+
+    init<T: BinaryFloatingPoint>(_
