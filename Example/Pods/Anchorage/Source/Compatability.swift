@@ -71,4 +71,6 @@ extension CGFloat {
         case is Float:
             self.init(value as! Float)
         case is CGFloat:
-            self.init(value as! CGFloat
+            self.init(value as! CGFloat)
+        default:
+            fatalError("Unable to initialize CGFloat with value \
