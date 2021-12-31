@@ -68,4 +68,7 @@ extension CGFloat {
         switch value {
         case is Double:
             self.init(value as! Double)
-        case
+        case is Float:
+            self.init(value as! Float)
+        case is CGFloat:
+            self.init(value as! CGFloat
