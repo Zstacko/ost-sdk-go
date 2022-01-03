@@ -81,4 +81,7 @@ extension CGFloat {
 
 extension Float {
 
-    init<T: Bina
+    init<T: BinaryFloatingPoint>(_ value: T) {
+        switch value {
+        case is Double:
+            self.init(value as! D
