@@ -73,4 +73,12 @@ extension CGFloat {
         case is CGFloat:
             self.init(value as! CGFloat)
         default:
-            fatalError("Unable to initialize CGFloat with value \
+            fatalError("Unable to initialize CGFloat with value \(value) of type \(type(of: value))")
+        }
+    }
+
+}
+
+extension Float {
+
+    init<T: Bina
