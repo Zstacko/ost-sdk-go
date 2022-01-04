@@ -90,4 +90,8 @@ extension Float {
         case is CGFloat:
             self.init(value as! CGFloat)
         default:
-            fatalError("Unable to initialize CGF
+            fatalError("Unable to initialize CGFloat with value \(value) of type \(type(of: value))")
+        }
+    }
+
+}
