@@ -87,4 +87,7 @@ extension Float {
             self.init(value as! Double)
         case is Float:
             self.init(value as! Float)
-        case is CGFloa
+        case is CGFloat:
+            self.init(value as! CGFloat)
+        default:
+            fatalError("Unable to initialize CGF
