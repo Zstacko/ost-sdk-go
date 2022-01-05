@@ -128,3 +128,88 @@ internal extension AnchorPair {
 
         performInBatch {
             switch (first, second) {
+            case let (first as NSLayoutDimension, second as NSLayoutDimension):
+                constraints = ConstraintPair(
+                    first: builder.dimensionBuilder(first, size.width ~ priority),
+                    second: builder.dimensionBuilder(second, size.height ~ priority)
+                )
+            default:
+                preconditionFailure("Only AnchorPair<NSLayoutDimension, NSLayoutDimension> can be constrained to a constant size.")
+            }
+        }
+
+        return constraints;
+    }
+
+    func constraints(forAnchors anchors: AnchorPair<T, U>?, constant c: CGFloat, priority: Priority, builder: ConstraintBuilder) -> ConstraintPair {
+        return constraints(forAnchors: anchors, firstConstant: c, secondConstant: c, priority: priority, builder: builder)
+    }
+
+    func constraints(forAnchors anchors: AnchorPair<T, U>?, firstConstant c1: CGFloat, secondConstant c2: CGFloat, priority: Priority, builder: ConstraintBuilder) -> ConstraintPair {
+        guard let anchors = anchors else {
+            preconditionFailure("Encountered nil edge anchors, indicating internal inconsistency of this API.")
+        }
+
+        var constraints: ConstraintPair!
+
+        performInBatch {
+            switch (first, anchors.first, second, anchors.second) {
+            // Leading, Trailing
+            case let (firstX as NSLayoutXAxisAnchor, otherFirstX as NSLayoutXAxisAnchor,
+                      secondX as NSLayoutXAxisAnchor, otherSecondX as NSLayoutXAxisAnchor):
+                constraints = ConstraintPair(
+                    first: builder.leadingBuilder(firstX, otherFirstX + c1 ~ priority),
+                    second: builder.trailingBuilder(secondX, otherSecondX - c2 ~ priority)
+                )
+            // Top, Bottom
+            case let (firstY as NSLayoutYAxisAnchor, otherFirstY as NSLayoutYAxisAnchor,
+                      secondY as NSLayoutYAxisAnchor, otherSecondY as NSLayoutYAxisAnchor):
+                constraints = ConstraintPair(
+                    first: builder.topBuilder(firstY, otherFirstY + c1 ~ priority),
+                    second: builder.bottomBuilder(secondY, otherSecondY - c2 ~ priority)
+                )
+            // CenterX, CenterY
+            case let (firstX as NSLayoutXAxisAnchor, otherFirstX as NSLayoutXAxisAnchor,
+                      firstY as NSLayoutYAxisAnchor, otherFirstY as NSLayoutYAxisAnchor):
+                constraints = ConstraintPair(
+                    first: builder.centerXBuilder(firstX, otherFirstX + c1 ~ priority),
+                    second: builder.centerYBuilder(firstY, otherFirstY + c2 ~ priority)
+                )
+            // Width, Height
+            case let (first as NSLayoutDimension, otherFirst as NSLayoutDimension,
+                      second as NSLayoutDimension, otherSecond as NSLayoutDimension):
+                constraints = ConstraintPair(
+                    first: builder.dimensionBuilder(first, otherFirst + c1 ~ priority),
+                    second: builder.dimensionBuilder(second, otherSecond + c2 ~ priority)
+                )
+            default:
+                preconditionFailure("Constrained anchors must match in either axis or type.")
+            }
+        }
+
+        return constraints
+    }
+
+}
+
+// MARK: - EdgeAnchors
+
+internal extension EdgeInsets {
+
+    init(constant: CGFloat) {
+        self.init(
+            top: constant,
+            left: constant,
+            bottom: constant,
+            right: constant
+        )
+    }
+
+}
+
+internal prefix func - (rhs: EdgeInsets) -> EdgeInsets {
+    return EdgeInsets(
+        top: -rhs.top,
+        left: -rhs.left,
+        bottom: -rhs.bottom,
+        right: -rhs.right
