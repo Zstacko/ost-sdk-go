@@ -213,3 +213,89 @@ internal prefix func - (rhs: EdgeInsets) -> EdgeInsets {
         left: -rhs.left,
         bottom: -rhs.bottom,
         right: -rhs.right
+    )
+}
+
+internal extension EdgeAnchors {
+
+    init(horizontal: AnchorPair<NSLayoutXAxisAnchor, NSLayoutXAxisAnchor>, vertical: AnchorPair<NSLayoutYAxisAnchor, NSLayoutYAxisAnchor>) {
+        self.horizontalAnchors = horizontal
+        self.verticalAnchors = vertical
+    }
+
+    func finalize(constraintsEqualToEdges anchor: EdgeAnchors?, insets: EdgeInsets, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: insets, priority: priority, builder: ConstraintBuilder.equality)
+    }
+
+    func finalize(constraintsLessThanOrEqualToEdges anchor: EdgeAnchors?, insets: EdgeInsets, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: insets, priority: priority, builder: ConstraintBuilder.lessThanOrEqual)
+    }
+
+    func finalize(constraintsGreaterThanOrEqualToEdges anchor: EdgeAnchors?, insets: EdgeInsets, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: insets, priority: priority, builder: ConstraintBuilder.greaterThanOrEqual)
+    }
+
+    func finalize(constraintsEqualToEdges anchor: EdgeAnchors?, constant c: CGFloat = 0.0, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: EdgeInsets(constant: c), priority: priority, builder: ConstraintBuilder.equality)
+    }
+
+    func finalize(constraintsLessThanOrEqualToEdges anchor: EdgeAnchors?, constant c: CGFloat = 0.0, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: EdgeInsets(constant: c), priority: priority, builder: ConstraintBuilder.lessThanOrEqual)
+    }
+
+    func finalize(constraintsGreaterThanOrEqualToEdges anchor: EdgeAnchors?, constant c: CGFloat = 0.0, priority: Priority = .required) -> ConstraintGroup {
+        return constraints(forAnchors: anchor, insets: EdgeInsets(constant: c), priority: priority, builder: ConstraintBuilder.greaterThanOrEqual)
+    }
+
+    func constraints(forAnchors anchors: EdgeAnchors?, insets: EdgeInsets, priority: Priority, builder: ConstraintBuilder) -> ConstraintGroup {
+        guard let anchors = anchors else {
+            preconditionFailure("Encountered nil edge anchors, indicating internal inconsistency of this API.")
+        }
+
+        var constraints: ConstraintGroup!
+
+        performInBatch {
+            let horizontalConstraints = horizontalAnchors.constraints(forAnchors: anchors.horizontalAnchors, firstConstant: insets.left, secondConstant: insets.right, priority: priority, builder: builder)
+            let verticalConstraints = verticalAnchors.constraints(forAnchors: anchors.verticalAnchors, firstConstant: insets.top, secondConstant: insets.bottom, priority: priority, builder: builder)
+            constraints = ConstraintGroup(
+                top: verticalConstraints.first,
+                leading: horizontalConstraints.first,
+                bottom: verticalConstraints.second,
+                trailing: horizontalConstraints.second
+            )
+        }
+
+        return constraints
+    }
+
+}
+
+// MARK: - ConstraintBuilder
+
+internal struct ConstraintBuilder {
+
+    typealias Horizontal = (NSLayoutXAxisAnchor, LayoutExpression<NSLayoutXAxisAnchor, CGFloat>) -> NSLayoutConstraint
+    typealias Vertical = (NSLayoutYAxisAnchor, LayoutExpression<NSLayoutYAxisAnchor, CGFloat>) -> NSLayoutConstraint
+    typealias Dimension = (NSLayoutDimension, LayoutExpression<NSLayoutDimension, CGFloat>) -> NSLayoutConstraint
+
+    static let equality = ConstraintBuilder(horizontal: ==, vertical: ==, dimension: ==)
+    static let lessThanOrEqual = ConstraintBuilder(leading: <=, top: <=, trailing: >=, bottom: >=, centerX: <=, centerY: <=, dimension: <=)
+    static let greaterThanOrEqual = ConstraintBuilder(leading: >=, top: >=, trailing: <=, bottom: <=, centerX: >=, centerY: >=, dimension: >=)
+
+    var topBuilder: Vertical
+    var leadingBuilder: Horizontal
+    var bottomBuilder: Vertical
+    var trailingBuilder: Horizontal
+    var centerYBuilder: Vertical
+    var centerXBuilder: Horizontal
+    var dimensionBuilder: Dimension
+
+    init(horizontal: @escaping Horizontal, vertical: @escaping Vertical, dimension: @escaping Dimension) {
+        topBuilder = vertical
+        leadingBuilder = horizontal
+        bottomBuilder = vertical
+        trailingBuilder = horizontal
+        centerYBuilder = vertical
+        centerXBuilder = horizontal
+        dimensionBuilder = dimension
+    }
