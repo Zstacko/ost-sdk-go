@@ -299,3 +299,67 @@ internal struct ConstraintBuilder {
         centerXBuilder = horizontal
         dimensionBuilder = dimension
     }
+
+    init(leading: @escaping Horizontal, top: @escaping Vertical, trailing: @escaping Horizontal,
+         bottom: @escaping Vertical, centerX: @escaping Horizontal, centerY: @escaping Vertical, dimension: @escaping Dimension) {
+        leadingBuilder = leading
+        topBuilder = top
+        trailingBuilder = trailing
+        bottomBuilder = bottom
+        centerYBuilder = centerY
+        centerXBuilder = centerX
+        dimensionBuilder = dimension
+    }
+
+}
+
+// MARK: - Batching
+
+internal var batches: [ConstraintBatch] = []
+
+internal class ConstraintBatch {
+
+    var constraints = [NSLayoutConstraint]()
+
+    func add(constraint: NSLayoutConstraint) {
+        constraints.append(constraint)
+    }
+
+    func activate() {
+        NSLayoutConstraint.activate(constraints)
+    }
+
+}
+
+/// Perform a closure immediately if a batch is already active,
+/// otherwise executes the closure in a new batch.
+///
+/// - Parameter closure: The work to perform inside of a batch
+internal func performInBatch(closure: () -> Void) {
+    if batches.isEmpty {
+        batch(closure)
+    }
+    else {
+        closure()
+    }
+}
+
+// MARK: - Constraint Activation
+
+internal func finalize(constraint: NSLayoutConstraint, withPriority priority: Priority = .required) -> NSLayoutConstraint {
+    // Only disable autoresizing constraints on the LHS item, which is the one definitely intended to be governed by Auto Layout
+    if let first = constraint.firstItem as? View {
+        first.translatesAutoresizingMaskIntoConstraints = false
+    }
+
+    constraint.priority = priority.value
+
+    if let lastBatch = batches.last {
+        lastBatch.add(constraint: constraint)
+    }
+    else {
+        constraint.isActive = true
+    }
+
+    return constraint
+}
