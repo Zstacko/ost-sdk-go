@@ -106,3 +106,91 @@
 		132447CB3B588D1E8757E684AB0E793C /* UIAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertController.swift; path = CryptoContribute/Classes/UIAlertController.swift; sourceTree = "<group>"; };
 		135BBFC7B44EF871EC3B980D18777B63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		14600B3AE9FC2A5FEEEE4A253AE0C2A2 /* Pods-CryptoContribute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoContribute_Tests-dummy.m"; sourceTree = "<group>"; };
+		1634D68FA2E8E92189DC56154259EB0E /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Source/Internal.swift; sourceTree = "<group>"; };
+		166160DA6E8E5E741AF06A4E28E51E39 /* Pods-CryptoContribute_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoContribute_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		16A6104894F2661D2AE0522F740031FC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B61C9BD7AD90980B93EFD9F71BD0B99 /* Anchorage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Anchorage.modulemap; sourceTree = "<group>"; };
+		1E2F12C232AC7A911A20BD7DF02E1E18 /* ContributeCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContributeCoordinator.swift; path = CryptoContribute/Classes/ContributeCoordinator.swift; sourceTree = "<group>"; };
+		1F404EC68724A74E43BA85B33B6F7300 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		275D59CBE0921F515E1387A7028801E2 /* CryptoContribute.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoContribute.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		2889DD31F2F2AE66CCDCFACEF151E44F /* WhiteButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WhiteButton.swift; path = CryptoContribute/Classes/WhiteButton.swift; sourceTree = "<group>"; };
+		29DCA2A1D6886D32AED529AEBE052ED0 /* Pods-CryptoContribute_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoContribute_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		311626B7758C7C717338BDC29B39F758 /* Pods_CryptoContribute_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoContribute_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		334EEB22B2BE287F5A84E469A4EFF2A1 /* Pods-CryptoContribute_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoContribute_Example-dummy.m"; sourceTree = "<group>"; };
+		364918E9341688C1FB776FADC34EB912 /* CIImageExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIImageExtension.swift; path = QRCode/CIImageExtension.swift; sourceTree = "<group>"; };
+		38EBD7B3F3056AF41B9ABC2BE6E51E5E /* NSLayoutAnchor+MultiplierConstraints.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+MultiplierConstraints.swift"; path = "Source/NSLayoutAnchor+MultiplierConstraints.swift"; sourceTree = "<group>"; };
+		3E89F6F5D803AC0392641FA654C90131 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F4C0C65810189D1722EE87C4CA2A6DD /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47CD96DE7AB0588C9F102BB5BD16E7D7 /* CryptoContribute.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CryptoContribute.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4895BBB9460E2314E184FAC992253D03 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48F0C64CE50A41AE716F2D52F5A31ECB /* CryptoContribute.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = CryptoContribute.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A940EB2ADE021DB18E33FDDEC271A84 /* CryptoContribute-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoContribute-prefix.pch"; sourceTree = "<group>"; };
+		4AB4BE6FB3A3C25EF73843692CB8E7ED /* ClosureProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClosureProxy.swift; path = CryptoContribute/Classes/ClosureProxy.swift; sourceTree = "<group>"; };
+		4E2C2E7514C88EF4E8689E2AA544E127 /* Pods-CryptoContribute_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoContribute_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5E215D7C804E82805CF279A2FCD69F87 /* Pods-CryptoContribute_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoContribute_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		60A0A8F92EFC01DD46E2A3D76C22B466 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		621E56E5416D8ED52CB48A4D65C0DDCE /* Pods-CryptoContribute_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoContribute_Tests.modulemap"; sourceTree = "<group>"; };
+		62A65C362B535AC16C601DD7EABAE51B /* Anchorage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Anchorage.xcconfig; sourceTree = "<group>"; };
+		641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		64AAD6018749B64FF2B97C6C184D1BD1 /* Pods-CryptoContribute_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoContribute_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		6EC9220DD5479A9C1A2E11C5B5159004 /* QRCode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-umbrella.h"; sourceTree = "<group>"; };
+		70716FA8DEAD9900D54C33A02EECD7C3 /* CryptoContribute.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CryptoContribute.xcconfig; sourceTree = "<group>"; };
+		71F4897952C74801D87638631716DCA0 /* Anchorage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Anchorage-dummy.m"; sourceTree = "<group>"; };
+		73E022F15672F70ADE2FCFF8A0D12B40 /* QRDisplayViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRDisplayViewController.swift; path = CryptoContribute/Classes/QRDisplayViewController.swift; sourceTree = "<group>"; };
+		7580F3709548B3402B1220101DE863C4 /* Pods-CryptoContribute_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoContribute_Example-frameworks.sh"; sourceTree = "<group>"; };
+		75B4D3712413139995B30DAE8FE819F0 /* Pods_CryptoContribute_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoContribute_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7737B810612EFC25C9DE7CF3BFC7A088 /* Pods-CryptoContribute_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoContribute_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		79315CEB0751BD5A3FC85F194C205331 /* Pods-CryptoContribute_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoContribute_Example-resources.sh"; sourceTree = "<group>"; };
+		7A1694EB18D451F951B637D0D36558E9 /* Anchorage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-umbrella.h"; sourceTree = "<group>"; };
+		7C7A64AE6838AAFDEA28D556E9141D65 /* CryptoContribute-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CryptoContribute-dummy.m"; sourceTree = "<group>"; };
+		813662DC696DD3D6C84BFE016F6789C3 /* ConfettiView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfettiView.swift; path = CryptoContribute/Classes/ConfettiView.swift; sourceTree = "<group>"; };
+		81DB583AF1715BF4D22065195BB3E285 /* Pods-CryptoContribute_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CryptoContribute_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8595C545826FC509694DBFF7E2A15693 /* Anchorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Anchorage.swift; path = Source/Anchorage.swift; sourceTree = "<group>"; };
+		8723C16C3CB825714A86CDD79D7ABFD6 /* QRCode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCode-dummy.m"; sourceTree = "<group>"; };
+		87FA89F9C52945E01769C34B163FEBEE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		89B836277F932625F2A82FB55D167779 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8ED7DED2E29CB3148FD8C0ECB0E871AD /* Pods-CryptoContribute_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CryptoContribute_Example.modulemap"; sourceTree = "<group>"; };
+		910D244377548DC82775329A118BCA05 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CryptoContribute/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		944D0F117CE06DB30A881FE8CD637FB7 /* AnchorGroupProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnchorGroupProvider.swift; path = Source/AnchorGroupProvider.swift; sourceTree = "<group>"; };
+		95B28B11FBE0CD1154DF263CC3C3420C /* QRCode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCode-prefix.pch"; sourceTree = "<group>"; };
+		9AE572DCD6A480C2EEA1BF4B4BFBBB5D /* QRCode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QRCode.swift; path = QRCode/QRCode.swift; sourceTree = "<group>"; };
+		A67E16C5B9B0EA7F534544C8DC2BD874 /* CryptoContribute-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CryptoContribute-umbrella.h"; sourceTree = "<group>"; };
+		ADBCD218D5A1E5B99914CFD8DE5FF1D0 /* QRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = QRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE15057675FC880266C6410F8BE82E41 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B027EA4E398ECE3E31B87C086C11137A /* CryptoContribute.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CryptoContribute.modulemap; sourceTree = "<group>"; };
+		B0374DC62135155C0015425A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = CryptoContribute/Classes/File.swift; sourceTree = "<group>"; };
+		B5FC2DCB8D08DB65E4197809F62D1ED6 /* DonateView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DonateView.swift; path = CryptoContribute/Classes/DonateView.swift; sourceTree = "<group>"; };
+		BB8C892EBB05C0091D70C8A94513365F /* DonateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DonateViewController.swift; path = CryptoContribute/Classes/DonateViewController.swift; sourceTree = "<group>"; };
+		C35B2778CB9EF0808E20CCC94F91A5FE /* Anchorage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Anchorage-prefix.pch"; sourceTree = "<group>"; };
+		C74D8D5AA52D03E954E4F8B9D93550EB /* Pods-CryptoContribute_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoContribute_Example-umbrella.h"; sourceTree = "<group>"; };
+		D37DC32FA1D14F08A7F6BD7EF96BCF38 /* Pods-CryptoContribute_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CryptoContribute_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D5B775F534E09D27524C388E5B235A89 /* Pods-CryptoContribute_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CryptoContribute_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9F46FF0BCDA6D23808CE237D26F46FB /* QRCode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = QRCode.modulemap; sourceTree = "<group>"; };
+		E5F17E552D99196F7F5084B02C0F88F8 /* Pods-CryptoContribute_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CryptoContribute_Tests-resources.sh"; sourceTree = "<group>"; };
+		EC680107D607CB9AD14ACE698E85E457 /* Priority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Priority.swift; path = Source/Priority.swift; sourceTree = "<group>"; };
+		EE2131692639E84C138FC0EED7B79C70 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImageViewExtension.swift; path = QRCode/UIImageViewExtension.swift; sourceTree = "<group>"; };
+		EE77AE6AE3DB136B47F940FC9488209F /* QRCode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCode.xcconfig; sourceTree = "<group>"; };
+		F249CB3924C1662F96A02EC6698F742C /* Pods-CryptoContribute_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CryptoContribute_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F49000940E07450B7D796EE96666A5F8 /* CIColorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CIColorExtension.swift; path = QRCode/CIColorExtension.swift; sourceTree = "<group>"; };
+		F51F9460B8F10F54EDC562D38F81FDD9 /* ResourceBundle-CryptoContribute-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-CryptoContribute-Info.plist"; sourceTree = "<group>"; };
+		F6720BF3061BC4018450048362A3E6D5 /* Anchorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Anchorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42E3714689306EF30584800C60C2CA48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C9D9358996E743BABB2292978334A1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0A8D0892092FFD7262643BD478EEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
