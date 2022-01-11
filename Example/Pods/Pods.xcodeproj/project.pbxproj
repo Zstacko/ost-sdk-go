@@ -1,0 +1,108 @@
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F4897952C74801D87638631716DCA0 /* Anchorage-dummy.m */; };
+		09437FF16A36CE3295B2A43A29CBC8E7 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813662DC696DD3D6C84BFE016F6789C3 /* ConfettiView.swift */; };
+		0E08579388D44F4AB36270FE0F48E1B2 /* CryptoContribute-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7A64AE6838AAFDEA28D556E9141D65 /* CryptoContribute-dummy.m */; };
+		101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944D0F117CE06DB30A881FE8CD637FB7 /* AnchorGroupProvider.swift */; };
+		1DE2577F2E64AC81EC353438C3BD7AF9 /* Pods-CryptoContribute_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14600B3AE9FC2A5FEEEE4A253AE0C2A2 /* Pods-CryptoContribute_Tests-dummy.m */; };
+		209FE9D4532131E6AAB83437E119C9F8 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2889DD31F2F2AE66CCDCFACEF151E44F /* WhiteButton.swift */; };
+		2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EBD7B3F3056AF41B9ABC2BE6E51E5E /* NSLayoutAnchor+MultiplierConstraints.swift */; };
+		2A2B07FEC2AAE806F9144480CCD984D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */; };
+		35C9D9358996E743BABB2292978334A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */; };
+		36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1694EB18D451F951B637D0D36558E9 /* Anchorage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37BACD770334B208489538AFBC122F25 /* ContributeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F12C232AC7A911A20BD7DF02E1E18 /* ContributeCoordinator.swift */; };
+		3E0066E946FF6C972D9F8D8C5A6C81FD /* CIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49000940E07450B7D796EE96666A5F8 /* CIColorExtension.swift */; };
+		47B614DD4DD6DEF4B5438ED8410D842C /* Pods-CryptoContribute_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 334EEB22B2BE287F5A84E469A4EFF2A1 /* Pods-CryptoContribute_Example-dummy.m */; };
+		51D5FA293CB6835BEEF87E38A2611FF0 /* Pods-CryptoContribute_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D37DC32FA1D14F08A7F6BD7EF96BCF38 /* Pods-CryptoContribute_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573800EA1A9B4FB521937760B3834DB2 /* QRCode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8723C16C3CB825714A86CDD79D7ABFD6 /* QRCode-dummy.m */; };
+		63E5DB0562E451216E104CB95CF10108 /* DonateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8C892EBB05C0091D70C8A94513365F /* DonateViewController.swift */; };
+		6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8595C545826FC509694DBFF7E2A15693 /* Anchorage.swift */; };
+		6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BBED75A527A6656B06960757DC10BA7 /* Compatability.swift */; };
+		73DD7705A3AAF33BA1CC751453B9546A /* ClosureProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB4BE6FB3A3C25EF73843692CB8E7ED /* ClosureProxy.swift */; };
+		775ADBEE76EF58D505A6EE4A4F19BC3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */; };
+		7EC0221FD602D4B6741144050A9A8BF9 /* Pods-CryptoContribute_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C74D8D5AA52D03E954E4F8B9D93550EB /* Pods-CryptoContribute_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85A3FF47DA4B954D5CE4AED1FAB28783 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F404EC68724A74E43BA85B33B6F7300 /* UIKit.framework */; };
+		891ECE71677B9438269903AB82BBA965 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364918E9341688C1FB776FADC34EB912 /* CIImageExtension.swift */; };
+		8C553B25C833AAD983212D436FA4AEBB /* QRCode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC9220DD5479A9C1A2E11C5B5159004 /* QRCode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90066E55AC6B82936F27B675C20E80AA /* QRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F4C0C65810189D1722EE87C4CA2A6DD /* QRCode.framework */; };
+		94C8B6C5352CBFDEF063CDC7B2CA9319 /* Anchorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6720BF3061BC4018450048362A3E6D5 /* Anchorage.framework */; };
+		94EE5FD71D16B591FAAF0C48E506E8C5 /* DonateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FC2DCB8D08DB65E4197809F62D1ED6 /* DonateView.swift */; };
+		99F8AB11ED37E4F31C292D3B112587F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */; };
+		9CC5685D09C0F839612A1D168043AEBC /* QRDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73E022F15672F70ADE2FCFF8A0D12B40 /* QRDisplayViewController.swift */; };
+		9E93EEB60440DA02F886F780EA6CCCA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910D244377548DC82775329A118BCA05 /* Assets.xcassets */; };
+		A4F8A80A88F77E90D599181C99AFFB83 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE572DCD6A480C2EEA1BF4B4BFBBB5D /* QRCode.swift */; };
+		AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC680107D607CB9AD14ACE698E85E457 /* Priority.swift */; };
+		B0374DC8213515650015425A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0374DC62135155C0015425A /* File.swift */; };
+		B464F198EE997C523E2F203D114DDB90 /* CryptoContribute-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A67E16C5B9B0EA7F534544C8DC2BD874 /* CryptoContribute-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE5962A8B46E1F9202A25E5B89102300 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2131692639E84C138FC0EED7B79C70 /* UIImageViewExtension.swift */; };
+		C39705755AAAFF85B088E6804ED3A7EC /* CryptoContribute.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 275D59CBE0921F515E1387A7028801E2 /* CryptoContribute.bundle */; };
+		E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1634D68FA2E8E92189DC56154259EB0E /* Internal.swift */; };
+		E57AEBFF3D632F46983158E794D51579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */; };
+		FDCAF97FB9ADB6FBC9D5D22F26350353 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132447CB3B588D1E8757E684AB0E793C /* UIAlertController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1824EE13631053DEE5613246D5B8BC55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFADDD27E9AE133283F4BFCC355134F;
+			remoteInfo = Anchorage;
+		};
+		1CF4375267E5676DC1730E132B1F7704 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00A08DDE9D9458B3A5D37C274B53350A;
+			remoteInfo = "CryptoContribute-CryptoContribute";
+		};
+		1F0C97DB1BE640D31FA3E8F76CD5EACF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BB9799075E216AA57338646BAB1245;
+			remoteInfo = QRCode;
+		};
+		51091F78C9F7A22B770D9E4ED946B262 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 038845BEC855AE676EA8FFFEE8B2149F;
+			remoteInfo = CryptoContribute;
+		};
+		7EDAF59E0A79D4EC492AA5C8DA6B11DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9BB9799075E216AA57338646BAB1245;
+			remoteInfo = QRCode;
+		};
+		CC369BBD23A94F11499780F7074D3E41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1436F5D513F0CFBCD14CC05B368243B;
+			remoteInfo = "Pods-CryptoContribute_Example";
+		};
+		DA1A919CF7E4EE8A06415E99231E8A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDFADDD27E9AE133283F4BFCC355134F;
+			remoteInfo = Anchorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BBED75A527A6656B06960757DC10BA7 /* Compatability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatability.swift; path = Source/Compatability.swift; sourceTree = "<group>"; };
+		132447CB3B588D1E8757E684AB0E793C /* UIAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIAlertController.swift; path = CryptoContribute/Classes/UIAlertController.swift; sourceTree = "<group>"; };
+		135BBFC7B44EF871EC3B980D18777B63 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		14600B3AE9FC2A5FEEEE4A253AE0C2A2 /* Pods-CryptoContribute_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CryptoContribute_Tests-dummy.m"; sourceTree = "<group>"; };
