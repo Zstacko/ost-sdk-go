@@ -32,3 +32,59 @@
 #else
     import UIKit
 #endif
+
+public enum Priority: ExpressibleByFloatLiteral, ExpressibleByIntegerLiteral, Equatable {
+
+    case required
+    case high
+    case low
+    case fittingSize
+    case custom(LayoutPriority)
+
+    public var value: LayoutPriority {
+        switch self {
+        case .required: return LayoutPriorityRequired
+        case .high: return LayoutPriorityHigh
+        case .low: return LayoutPriorityLow
+        case .fittingSize: return LayoutPriorityFittingSize
+        case .custom(let priority): return priority
+        }
+    }
+
+    public init(floatLiteral value: Float) {
+        self = .custom(LayoutPriority(value))
+    }
+
+    public init(integerLiteral value: Int) {
+        self.init(value)
+    }
+
+    public init(_ value: Int) {
+        self = .custom(LayoutPriority(Float(value)))
+    }
+
+    public init<T: BinaryFloatingPoint>(_ value: T) {
+        self = .custom(LayoutPriority(Float(value)))
+    }
+
+}
+
+public func == (lhs: Priority, rhs: Priority) -> Bool {
+    return lhs.value == rhs.value
+}
+
+public func + <T: BinaryFloatingPoint>(lhs: Priority, rhs: T) -> Priority {
+    return .custom(LayoutPriority(rawValue: lhs.value.rawValue + Float(rhs)))
+}
+
+public func + <T: BinaryFloatingPoint>(lhs: T, rhs: Priority) -> Priority {
+    return .custom(LayoutPriority(rawValue: Float(lhs) + rhs.value.rawValue))
+}
+
+public func - <T: BinaryFloatingPoint>(lhs: Priority, rhs: T) -> Priority {
+    return .custom(LayoutPriority(rawValue: lhs.value.rawValue - Float(rhs)))
+}
+
+public func - <T: BinaryFloatingPoint>(lhs: T, rhs: Priority) -> Priority {
+    return .custom(LayoutPriority(rawValue: Float(lhs) - rhs.value.rawValue))
+}

@@ -1,0 +1,17 @@
+
+PODS:
+  - Anchorage (4.2.4)
+  - CryptoContribute (0.1.0):
+    - Anchorage
+    - QRCode
+  - QRCode (2.0)
+
+DEPENDENCIES:
+  - CryptoContribute (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Anchorage
+    - QRCode
+
+EXTERNAL SOURCES:
