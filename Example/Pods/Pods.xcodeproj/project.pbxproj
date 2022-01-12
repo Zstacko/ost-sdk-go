@@ -194,3 +194,95 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4D63D3A42FC51CA6A61BFAE0774E7460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F8AB11ED37E4F31C292D3B112587F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A887522F9ECEFA1B2940A095CC160485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF7468FA0CD1E4528673BB8DD1F52FC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A2B07FEC2AAE806F9144480CCD984D7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2CC93C89771C2B0412EF016B16C1A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C8B6C5352CBFDEF063CDC7B2CA9319 /* Anchorage.framework in Frameworks */,
+				E57AEBFF3D632F46983158E794D51579 /* Foundation.framework in Frameworks */,
+				90066E55AC6B82936F27B675C20E80AA /* QRCode.framework in Frameworks */,
+				85A3FF47DA4B954D5CE4AED1FAB28783 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12253271E824650FAE85473D349688A3 /* Pods-CryptoContribute_Example */ = {
+			isa = PBXGroup;
+			children = (
+				16A6104894F2661D2AE0522F740031FC /* Info.plist */,
+				8ED7DED2E29CB3148FD8C0ECB0E871AD /* Pods-CryptoContribute_Example.modulemap */,
+				5E215D7C804E82805CF279A2FCD69F87 /* Pods-CryptoContribute_Example-acknowledgements.markdown */,
+				7737B810612EFC25C9DE7CF3BFC7A088 /* Pods-CryptoContribute_Example-acknowledgements.plist */,
+				334EEB22B2BE287F5A84E469A4EFF2A1 /* Pods-CryptoContribute_Example-dummy.m */,
+				7580F3709548B3402B1220101DE863C4 /* Pods-CryptoContribute_Example-frameworks.sh */,
+				79315CEB0751BD5A3FC85F194C205331 /* Pods-CryptoContribute_Example-resources.sh */,
+				C74D8D5AA52D03E954E4F8B9D93550EB /* Pods-CryptoContribute_Example-umbrella.h */,
+				29DCA2A1D6886D32AED529AEBE052ED0 /* Pods-CryptoContribute_Example.debug.xcconfig */,
+				4E2C2E7514C88EF4E8689E2AA544E127 /* Pods-CryptoContribute_Example.release.xcconfig */,
+			);
+			name = "Pods-CryptoContribute_Example";
+			path = "Target Support Files/Pods-CryptoContribute_Example";
+			sourceTree = "<group>";
+		};
+		2B5D0E6C702FCF677B897397411DC0E0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9E0CB54F6E68A004707D4591DEA9016C /* CryptoContribute */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		467FEDBBFE0933AFB4A37764A583F598 /* Pods-CryptoContribute_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3E89F6F5D803AC0392641FA654C90131 /* Info.plist */,
+				621E56E5416D8ED52CB48A4D65C0DDCE /* Pods-CryptoContribute_Tests.modulemap */,
+				81DB583AF1715BF4D22065195BB3E285 /* Pods-CryptoContribute_Tests-acknowledgements.markdown */,
+				F249CB3924C1662F96A02EC6698F742C /* Pods-CryptoContribute_Tests-acknowledgements.plist */,
+				14600B3AE9FC2A5FEEEE4A253AE0C2A2 /* Pods-CryptoContribute_Tests-dummy.m */,
+				166160DA6E8E5E741AF06A4E28E51E39 /* Pods-CryptoContribute_Tests-frameworks.sh */,
+				E5F17E552D99196F7F5084B02C0F88F8 /* Pods-CryptoContribute_Tests-resources.sh */,
+				D37DC32FA1D14F08A7F6BD7EF96BCF38 /* Pods-CryptoContribute_Tests-umbrella.h */,
+				D5B775F534E09D27524C388E5B235A89 /* Pods-CryptoContribute_Tests.debug.xcconfig */,
+				64AAD6018749B64FF2B97C6C184D1BD1 /* Pods-CryptoContribute_Tests.release.xcconfig */,
+			);
+			name = "Pods-CryptoContribute_Tests";
+			path = "Target Support Files/Pods-CryptoContribute_Tests";
+			sourceTree = "<group>";
+		};
+		5006EE6FE6E706C7F8E568CFA4266994 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6720BF3061BC4018450048362A3E6D5 /* Anchorage.framework */,
+				3F4C0C65810189D1722EE87C4CA2A6DD /* QRCode.framework */,
+				B97AFC26222DA762C521EF431DD78A9D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6592F267EE27538604EE69FDF3C15349 /* Support Files */ = {
