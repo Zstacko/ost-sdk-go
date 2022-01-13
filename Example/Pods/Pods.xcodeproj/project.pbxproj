@@ -389,3 +389,84 @@
 				F49000940E07450B7D796EE96666A5F8 /* CIColorExtension.swift */,
 				364918E9341688C1FB776FADC34EB912 /* CIImageExtension.swift */,
 				9AE572DCD6A480C2EEA1BF4B4BFBBB5D /* QRCode.swift */,
+				EE2131692639E84C138FC0EED7B79C70 /* UIImageViewExtension.swift */,
+				AD5B2C39F5CDA79F1B06E8935AEE7CA7 /* Support Files */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		AD5B2C39F5CDA79F1B06E8935AEE7CA7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				89B836277F932625F2A82FB55D167779 /* Info.plist */,
+				D9F46FF0BCDA6D23808CE237D26F46FB /* QRCode.modulemap */,
+				EE77AE6AE3DB136B47F940FC9488209F /* QRCode.xcconfig */,
+				8723C16C3CB825714A86CDD79D7ABFD6 /* QRCode-dummy.m */,
+				95B28B11FBE0CD1154DF263CC3C3420C /* QRCode-prefix.pch */,
+				6EC9220DD5479A9C1A2E11C5B5159004 /* QRCode-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/QRCode";
+			sourceTree = "<group>";
+		};
+		B97AFC26222DA762C521EF431DD78A9D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				641442F35C9E3421F91A64E6961C59C2 /* Foundation.framework */,
+				1F404EC68724A74E43BA85B33B6F7300 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		E8C4C5367CE8946FCAC8633DB60D8258 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				910D244377548DC82775329A118BCA05 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F09F95A800054F9ED1239CDD3573834B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12253271E824650FAE85473D349688A3 /* Pods-CryptoContribute_Example */,
+				467FEDBBFE0933AFB4A37764A583F598 /* Pods-CryptoContribute_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F65421020D57A6D965E4A760587C5062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9B3E5AE14325F475D625F257044A12AE /* Anchorage */,
+				9ECD56CCA9F8CF505E403887269469E1 /* QRCode */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A3A027CEC43D5CCC184E26CCDB27ED6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B75922D81D9E68B269B7F50C227C0B /* Anchorage-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		258036D4CC236F3019C0BB63143073D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C553B25C833AAD983212D436FA4AEBB /* QRCode-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46FE7373A8031B7D4EFB499946FB32E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B464F198EE997C523E2F203D114DDB90 /* CryptoContribute-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
