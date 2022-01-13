@@ -286,3 +286,106 @@
 			sourceTree = "<group>";
 		};
 		6592F267EE27538604EE69FDF3C15349 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B61C9BD7AD90980B93EFD9F71BD0B99 /* Anchorage.modulemap */,
+				62A65C362B535AC16C601DD7EABAE51B /* Anchorage.xcconfig */,
+				71F4897952C74801D87638631716DCA0 /* Anchorage-dummy.m */,
+				C35B2778CB9EF0808E20CCC94F91A5FE /* Anchorage-prefix.pch */,
+				7A1694EB18D451F951B637D0D36558E9 /* Anchorage-umbrella.h */,
+				60A0A8F92EFC01DD46E2A3D76C22B466 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Anchorage";
+			sourceTree = "<group>";
+		};
+		6E0C97C7D6FB09F4263E97DB9E6F3161 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE15057675FC880266C6410F8BE82E41 /* Anchorage.framework */,
+				275D59CBE0921F515E1387A7028801E2 /* CryptoContribute.bundle */,
+				47CD96DE7AB0588C9F102BB5BD16E7D7 /* CryptoContribute.framework */,
+				75B4D3712413139995B30DAE8FE819F0 /* Pods_CryptoContribute_Example.framework */,
+				311626B7758C7C717338BDC29B39F758 /* Pods_CryptoContribute_Tests.framework */,
+				ADBCD218D5A1E5B99914CFD8DE5FF1D0 /* QRCode.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7293FFEE110C8522D2CD63FDB8C2AF57 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B027EA4E398ECE3E31B87C086C11137A /* CryptoContribute.modulemap */,
+				70716FA8DEAD9900D54C33A02EECD7C3 /* CryptoContribute.xcconfig */,
+				7C7A64AE6838AAFDEA28D556E9141D65 /* CryptoContribute-dummy.m */,
+				4A940EB2ADE021DB18E33FDDEC271A84 /* CryptoContribute-prefix.pch */,
+				A67E16C5B9B0EA7F534544C8DC2BD874 /* CryptoContribute-umbrella.h */,
+				4895BBB9460E2314E184FAC992253D03 /* Info.plist */,
+				F51F9460B8F10F54EDC562D38F81FDD9 /* ResourceBundle-CryptoContribute-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CryptoContribute";
+			sourceTree = "<group>";
+		};
+		77BC66C35267E7FF0BF4FFF9B367ABCC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				48F0C64CE50A41AE716F2D52F5A31ECB /* CryptoContribute.podspec */,
+				87FA89F9C52945E01769C34B163FEBEE /* LICENSE */,
+				135BBFC7B44EF871EC3B980D18777B63 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				2B5D0E6C702FCF677B897397411DC0E0 /* Development Pods */,
+				5006EE6FE6E706C7F8E568CFA4266994 /* Frameworks */,
+				F65421020D57A6D965E4A760587C5062 /* Pods */,
+				6E0C97C7D6FB09F4263E97DB9E6F3161 /* Products */,
+				F09F95A800054F9ED1239CDD3573834B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9B3E5AE14325F475D625F257044A12AE /* Anchorage */ = {
+			isa = PBXGroup;
+			children = (
+				8595C545826FC509694DBFF7E2A15693 /* Anchorage.swift */,
+				944D0F117CE06DB30A881FE8CD637FB7 /* AnchorGroupProvider.swift */,
+				0BBED75A527A6656B06960757DC10BA7 /* Compatability.swift */,
+				1634D68FA2E8E92189DC56154259EB0E /* Internal.swift */,
+				38EBD7B3F3056AF41B9ABC2BE6E51E5E /* NSLayoutAnchor+MultiplierConstraints.swift */,
+				EC680107D607CB9AD14ACE698E85E457 /* Priority.swift */,
+				6592F267EE27538604EE69FDF3C15349 /* Support Files */,
+			);
+			path = Anchorage;
+			sourceTree = "<group>";
+		};
+		9E0CB54F6E68A004707D4591DEA9016C /* CryptoContribute */ = {
+			isa = PBXGroup;
+			children = (
+				4AB4BE6FB3A3C25EF73843692CB8E7ED /* ClosureProxy.swift */,
+				813662DC696DD3D6C84BFE016F6789C3 /* ConfettiView.swift */,
+				1E2F12C232AC7A911A20BD7DF02E1E18 /* ContributeCoordinator.swift */,
+				B5FC2DCB8D08DB65E4197809F62D1ED6 /* DonateView.swift */,
+				BB8C892EBB05C0091D70C8A94513365F /* DonateViewController.swift */,
+				73E022F15672F70ADE2FCFF8A0D12B40 /* QRDisplayViewController.swift */,
+				132447CB3B588D1E8757E684AB0E793C /* UIAlertController.swift */,
+				2889DD31F2F2AE66CCDCFACEF151E44F /* WhiteButton.swift */,
+				77BC66C35267E7FF0BF4FFF9B367ABCC /* Pod */,
+				E8C4C5367CE8946FCAC8633DB60D8258 /* Resources */,
+				7293FFEE110C8522D2CD63FDB8C2AF57 /* Support Files */,
+				B0374DC62135155C0015425A /* File.swift */,
+			);
+			name = CryptoContribute;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		9ECD56CCA9F8CF505E403887269469E1 /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				F49000940E07450B7D796EE96666A5F8 /* CIColorExtension.swift */,
+				364918E9341688C1FB776FADC34EB912 /* CIImageExtension.swift */,
+				9AE572DCD6A480C2EEA1BF4B4BFBBB5D /* QRCode.swift */,
