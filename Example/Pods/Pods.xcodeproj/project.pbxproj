@@ -562,3 +562,109 @@
 				86E8A9205E33BF69954B2855DA38FB19 /* PBXTargetDependency */,
 			);
 			name = "Pods-CryptoContribute_Example";
+			productName = "Pods-CryptoContribute_Example";
+			productReference = 75B4D3712413139995B30DAE8FE819F0 /* Pods_CryptoContribute_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AEFB60A0EB7CDB15D559D88705B519 /* Build configuration list for PBXNativeTarget "Anchorage" */;
+			buildPhases = (
+				6BA801A9D0E51F7388F26373D5ACF6FA /* Sources */,
+				4C0A8D0892092FFD7262643BD478EEE3 /* Frameworks */,
+				1A3A027CEC43D5CCC184E26CCDB27ED6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anchorage;
+			productName = Anchorage;
+			productReference = AE15057675FC880266C6410F8BE82E41 /* Anchorage.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F9BB9799075E216AA57338646BAB1245 /* QRCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 342B6F01A58FDEF2B291502F2CE58C7D /* Build configuration list for PBXNativeTarget "QRCode" */;
+			buildPhases = (
+				EABDBCACBBEC82571CD65ED9E8B6B574 /* Sources */,
+				AF7468FA0CD1E4528673BB8DD1F52FC8 /* Frameworks */,
+				258036D4CC236F3019C0BB63143073D4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCode;
+			productName = QRCode;
+			productReference = ADBCD218D5A1E5B99914CFD8DE5FF1D0 /* QRCode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6E0C97C7D6FB09F4263E97DB9E6F3161 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */,
+				038845BEC855AE676EA8FFFEE8B2149F /* CryptoContribute */,
+				00A08DDE9D9458B3A5D37C274B53350A /* CryptoContribute-CryptoContribute */,
+				C1436F5D513F0CFBCD14CC05B368243B /* Pods-CryptoContribute_Example */,
+				C0EAE291F87CA93F7E357CA6F1EEF6DF /* Pods-CryptoContribute_Tests */,
+				F9BB9799075E216AA57338646BAB1245 /* QRCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75118627550E798A24C7E494FE27F268 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39705755AAAFF85B088E6804ED3A7EC /* CryptoContribute.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F27F0E602E0BAA445E7CBC9A9406A3B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E93EEB60440DA02F886F780EA6CCCA8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		026935EAD2C7CC161D51B57CBB65DC05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE2577F2E64AC81EC353438C3BD7AF9 /* Pods-CryptoContribute_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BA801A9D0E51F7388F26373D5ACF6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				068E1D81BF6F2EB48E06E1E5988FE8D5 /* Anchorage-dummy.m in Sources */,
+				6929A18231635B7AC9E1C64F2C6A9729 /* Anchorage.swift in Sources */,
+				101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */,
+				6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */,
+				E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */,
