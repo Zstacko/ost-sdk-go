@@ -470,3 +470,95 @@
 				B464F198EE997C523E2F203D114DDB90 /* CryptoContribute-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+		};
+		592619A0EB20894057862BA4A2E9425F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EC0221FD602D4B6741144050A9A8BF9 /* Pods-CryptoContribute_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		996280CB18EEE759A965CC799E2299DC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51D5FA293CB6835BEEF87E38A2611FF0 /* Pods-CryptoContribute_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		00A08DDE9D9458B3A5D37C274B53350A /* CryptoContribute-CryptoContribute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C89CBD91C6236015075915F3DD40D08 /* Build configuration list for PBXNativeTarget "CryptoContribute-CryptoContribute" */;
+			buildPhases = (
+				A3821D426941B6266B2AA103F5F15751 /* Sources */,
+				A887522F9ECEFA1B2940A095CC160485 /* Frameworks */,
+				8F27F0E602E0BAA445E7CBC9A9406A3B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CryptoContribute-CryptoContribute";
+			productName = "CryptoContribute-CryptoContribute";
+			productReference = 275D59CBE0921F515E1387A7028801E2 /* CryptoContribute.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		038845BEC855AE676EA8FFFEE8B2149F /* CryptoContribute */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 233B6276D0E0B3DE6DB3CE1070608D9A /* Build configuration list for PBXNativeTarget "CryptoContribute" */;
+			buildPhases = (
+				DDD0598C7F3EF2F76B2D269971CD58C5 /* Sources */,
+				CD2CC93C89771C2B0412EF016B16C1A8 /* Frameworks */,
+				75118627550E798A24C7E494FE27F268 /* Resources */,
+				46FE7373A8031B7D4EFB499946FB32E4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EDDDF14AF3D43563319111B7C2288F3 /* PBXTargetDependency */,
+				4D0F011BCC025B31C0A48DD0BECCBE13 /* PBXTargetDependency */,
+				15C3F226334F522B244AF8FEE0413674 /* PBXTargetDependency */,
+			);
+			name = CryptoContribute;
+			productName = CryptoContribute;
+			productReference = 47CD96DE7AB0588C9F102BB5BD16E7D7 /* CryptoContribute.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0EAE291F87CA93F7E357CA6F1EEF6DF /* Pods-CryptoContribute_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55287D7D49E4C8BEAECC74A151D15B5B /* Build configuration list for PBXNativeTarget "Pods-CryptoContribute_Tests" */;
+			buildPhases = (
+				026935EAD2C7CC161D51B57CBB65DC05 /* Sources */,
+				4D63D3A42FC51CA6A61BFAE0774E7460 /* Frameworks */,
+				996280CB18EEE759A965CC799E2299DC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52611A99823D699F8665ECEA807A807C /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoContribute_Tests";
+			productName = "Pods-CryptoContribute_Tests";
+			productReference = 311626B7758C7C717338BDC29B39F758 /* Pods_CryptoContribute_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1436F5D513F0CFBCD14CC05B368243B /* Pods-CryptoContribute_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3217B97E32F2C6585566065C2DA268D /* Build configuration list for PBXNativeTarget "Pods-CryptoContribute_Example" */;
+			buildPhases = (
+				EE752C5ACA2FD5D9E77C3CB055106C98 /* Sources */,
+				42E3714689306EF30584800C60C2CA48 /* Frameworks */,
+				592619A0EB20894057862BA4A2E9425F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A2031A5D315AAF2C3FA862E4EFACA4 /* PBXTargetDependency */,
+				24D0FF982ED4A7E14755A28A1ECC40C4 /* PBXTargetDependency */,
+				86E8A9205E33BF69954B2855DA38FB19 /* PBXTargetDependency */,
+			);
+			name = "Pods-CryptoContribute_Example";
