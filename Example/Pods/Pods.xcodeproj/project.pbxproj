@@ -668,3 +668,98 @@
 				101784DB4E9011A49B3ECBD44999A3AB /* AnchorGroupProvider.swift in Sources */,
 				6D1B90FADCEC885E68A1AF6B4C241740 /* Compatability.swift in Sources */,
 				E0A8B2C60396294C63C89C4DE1C7C3C2 /* Internal.swift in Sources */,
+				2510A66801F2937A4FA56225D6A50FDB /* NSLayoutAnchor+MultiplierConstraints.swift in Sources */,
+				AF440B73367770EAB117472F6C328A23 /* Priority.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3821D426941B6266B2AA103F5F15751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD0598C7F3EF2F76B2D269971CD58C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				73DD7705A3AAF33BA1CC751453B9546A /* ClosureProxy.swift in Sources */,
+				09437FF16A36CE3295B2A43A29CBC8E7 /* ConfettiView.swift in Sources */,
+				37BACD770334B208489538AFBC122F25 /* ContributeCoordinator.swift in Sources */,
+				0E08579388D44F4AB36270FE0F48E1B2 /* CryptoContribute-dummy.m in Sources */,
+				94EE5FD71D16B591FAAF0C48E506E8C5 /* DonateView.swift in Sources */,
+				B0374DC8213515650015425A /* File.swift in Sources */,
+				63E5DB0562E451216E104CB95CF10108 /* DonateViewController.swift in Sources */,
+				9CC5685D09C0F839612A1D168043AEBC /* QRDisplayViewController.swift in Sources */,
+				FDCAF97FB9ADB6FBC9D5D22F26350353 /* UIAlertController.swift in Sources */,
+				209FE9D4532131E6AAB83437E119C9F8 /* WhiteButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EABDBCACBBEC82571CD65ED9E8B6B574 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0066E946FF6C972D9F8D8C5A6C81FD /* CIColorExtension.swift in Sources */,
+				891ECE71677B9438269903AB82BBA965 /* CIImageExtension.swift in Sources */,
+				573800EA1A9B4FB521937760B3834DB2 /* QRCode-dummy.m in Sources */,
+				A4F8A80A88F77E90D599181C99AFFB83 /* QRCode.swift in Sources */,
+				BE5962A8B46E1F9202A25E5B89102300 /* UIImageViewExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE752C5ACA2FD5D9E77C3CB055106C98 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47B614DD4DD6DEF4B5438ED8410D842C /* Pods-CryptoContribute_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		15C3F226334F522B244AF8FEE0413674 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCode;
+			target = F9BB9799075E216AA57338646BAB1245 /* QRCode */;
+			targetProxy = 7EDAF59E0A79D4EC492AA5C8DA6B11DA /* PBXContainerItemProxy */;
+		};
+		24D0FF982ED4A7E14755A28A1ECC40C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CryptoContribute;
+			target = 038845BEC855AE676EA8FFFEE8B2149F /* CryptoContribute */;
+			targetProxy = 51091F78C9F7A22B770D9E4ED946B262 /* PBXContainerItemProxy */;
+		};
+		2EDDDF14AF3D43563319111B7C2288F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Anchorage;
+			target = EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */;
+			targetProxy = DA1A919CF7E4EE8A06415E99231E8A1E /* PBXContainerItemProxy */;
+		};
+		4D0F011BCC025B31C0A48DD0BECCBE13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CryptoContribute-CryptoContribute";
+			target = 00A08DDE9D9458B3A5D37C274B53350A /* CryptoContribute-CryptoContribute */;
+			targetProxy = 1CF4375267E5676DC1730E132B1F7704 /* PBXContainerItemProxy */;
+		};
+		52611A99823D699F8665ECEA807A807C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CryptoContribute_Example";
+			target = C1436F5D513F0CFBCD14CC05B368243B /* Pods-CryptoContribute_Example */;
+			targetProxy = CC369BBD23A94F11499780F7074D3E41 /* PBXContainerItemProxy */;
+		};
+		86E8A9205E33BF69954B2855DA38FB19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = QRCode;
+			target = F9BB9799075E216AA57338646BAB1245 /* QRCode */;
+			targetProxy = 1F0C97DB1BE640D31FA3E8F76CD5EACF /* PBXContainerItemProxy */;
+		};
+		97A2031A5D315AAF2C3FA862E4EFACA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Anchorage;
+			target = EDFADDD27E9AE133283F4BFCC355134F /* Anchorage */;
+			targetProxy = 1824EE13631053DEE5613246D5B8BC55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
