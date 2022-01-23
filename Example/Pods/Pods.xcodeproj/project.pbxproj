@@ -1302,3 +1302,21 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9F488AB1F5E846AB581061E7565A33E2 /* Debug */,
+				ABF5AD90D3A2F737AEE9700DD99B8034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3217B97E32F2C6585566065C2DA268D /* Build configuration list for PBXNativeTarget "Pods-CryptoContribute_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7C4B60B9E5AE10A3B9478BE79C54E37 /* Debug */,
+				B0C2BEE8089A5505E23EF04708B853CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
