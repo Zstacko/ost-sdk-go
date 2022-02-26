@@ -95,3 +95,10 @@ public struct QRCode {
         guard let colorFilter = CIFilter(name: "CIFalseColor") else { return nil }
         
         colorFilter.setDefaults()
+        colorFilter.setValue(qrFilter.outputImage, forKey: "inputImage")
+        colorFilter.setValue(color, forKey: "inputColor0")
+        colorFilter.setValue(backgroundColor, forKey: "inputColor1")
+        
+        return colorFilter.outputImage
+    }
+}
