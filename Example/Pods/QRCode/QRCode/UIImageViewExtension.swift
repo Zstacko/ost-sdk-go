@@ -10,4 +10,6 @@ import UIKit
 
 public extension UIImageView {
     
-    /// 
+    /// Creates a new image view with the given QRCode
+    ///
+    /// - parameter qrCode:      The QRCode 
