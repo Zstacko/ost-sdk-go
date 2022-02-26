@@ -3,4 +3,11 @@
 //  QRCode
 //
 //  Created by Alexander Schuch on 27/01/15.
-//  C
+//  Copyright (c) 2015 Alexander Schuch. All rights reserved.
+//
+
+import UIKit
+
+public extension UIImageView {
+    
+    /// 
