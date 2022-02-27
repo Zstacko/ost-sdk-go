@@ -14,4 +14,7 @@ public extension UIImageView {
     ///
     /// - parameter qrCode:      The QRCode to display in the image view
     public convenience init(qrCode: QRCode) {
-        self.init(
+        self.init(image: qrCode.image)
+    }
+    
+}
