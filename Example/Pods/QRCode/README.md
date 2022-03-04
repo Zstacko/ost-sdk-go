@@ -4,4 +4,10 @@
 ![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)
 ![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg)
 
-A QR
+A QRCode generator written in Swift.
+
+![QRCode Example](Resources/example.png)
+
+## Overview
+
+Create a ne
