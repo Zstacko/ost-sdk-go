@@ -10,4 +10,7 @@ A QRCode generator written in Swift.
 
 ## Overview
 
-Create a ne
+Create a new QRCode representing a `URL`, a string or arbitrary data.
+The following examples all result in the same QRCode image.
+
+`
