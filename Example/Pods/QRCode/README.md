@@ -13,4 +13,8 @@ A QRCode generator written in Swift.
 Create a new QRCode representing a `URL`, a string or arbitrary data.
 The following examples all result in the same QRCode image.
 
-`
+```swift
+// URL
+let url = URL(string: "http://schuch.me")!
+let qrCode = QRCode(url)
+qrCode?.imag
