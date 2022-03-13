@@ -17,4 +17,11 @@ The following examples all result in the same QRCode image.
 // URL
 let url = URL(string: "http://schuch.me")!
 let qrCode = QRCode(url)
-qrCode?.imag
+qrCode?.image
+
+// String
+let qrCode = QRCode("http://schuch.me")
+qrCode?.image
+
+// NSData
+let data = "http://schu
