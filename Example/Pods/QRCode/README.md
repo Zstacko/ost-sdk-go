@@ -24,4 +24,9 @@ let qrCode = QRCode("http://schuch.me")
 qrCode?.image
 
 // NSData
-let data = "http://schu
+let data = "http://schuch.me".data(using: .isoLatin1)!
+let qrCode = QRCode(data)
+qrCode.image
+```
+
+### Customize the out
