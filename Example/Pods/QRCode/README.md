@@ -31,4 +31,8 @@ qrCode.image
 
 ### Customize the output image
 
-> Make sure to declare your `QRCode` instance as a variable in order make use of the follow
+> Make sure to declare your `QRCode` instance as a variable in order make use of the following features.
+
+**Adjust Output Size**
+
+Change the output size of the QRCode output image via the
