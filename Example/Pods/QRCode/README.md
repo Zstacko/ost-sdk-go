@@ -35,4 +35,8 @@ qrCode.image
 
 **Adjust Output Size**
 
-Change the output size of the QRCode output image via the
+Change the output size of the QRCode output image via the `size` property.
+
+```swift
+qrCode.size = CGSize(width: 300, height: 300)
+qrCode.image // UIImage (300
