@@ -29,4 +29,6 @@ let qrCode = QRCode(data)
 qrCode.image
 ```
 
-### Customize the out
+### Customize the output image
+
+> Make sure to declare your `QRCode` instance as a variable in order make use of the follow
