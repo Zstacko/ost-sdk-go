@@ -39,4 +39,9 @@ Change the output size of the QRCode output image via the `size` property.
 
 ```swift
 qrCode.size = CGSize(width: 300, height: 300)
-qrCode.image // UIImage (300
+qrCode.image // UIImage (300x300)
+```
+
+**Color**
+
+Modify the colors of the QRCode output image via `color` and `backgroundColor` pr
