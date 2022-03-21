@@ -44,4 +44,8 @@ qrCode.image // UIImage (300x300)
 
 **Color**
 
-Modify the colors of the QRCode output image via `color` and `backgroundColor` pr
+Modify the colors of the QRCode output image via `color` and `backgroundColor` properties.
+
+```swift
+qrCode.color = CIColor(rgba: "16a085")
+qrCode.backgroundColor = CIColor(rgba: "0
