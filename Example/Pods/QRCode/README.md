@@ -52,4 +52,8 @@ qrCode.backgroundColor = CIColor(rgba: "000")
 qrCode.image // UIImage (green QRCode color and black background)
 ```
 
-> **Note**: The above examples make use of the `CIColor` extension that ships with this project to create colors based on HEX stri
+> **Note**: The above examples make use of the `CIColor` extension that ships with this project to create colors based on HEX strings. 
+
+### UIImageView extension
+
+For convenience, a `UIImageView` extension is provided to d
