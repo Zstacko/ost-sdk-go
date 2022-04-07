@@ -59,4 +59,9 @@ qrCode.image // UIImage (green QRCode color and black background)
 For convenience, a `UIImageView` extension is provided to directly initialize an image view with an instance of `QRCode`.
 
 ```swift
-let imageView = UIImageView(qrCode:
+let imageView = UIImageView(qrCode: qrCode)
+```
+
+### Emoji alias
+
+In case you love emoji as much as I do, make sure to cr
