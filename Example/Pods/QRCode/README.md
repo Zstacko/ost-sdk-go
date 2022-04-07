@@ -64,4 +64,9 @@ let imageView = UIImageView(qrCode: qrCode)
 
 ### Emoji alias
 
-In case you love emoji as much as I do, make sure to cr
+In case you love emoji as much as I do, make sure to create your `QRCode` instance using the 🔳 typealias.
+
+```swift
+let qrCode = 🔳("http://example.com")
+```
+
