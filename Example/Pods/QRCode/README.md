@@ -74,4 +74,8 @@ let qrCode = 🔳("http://example.com")
 
 Current Swift compatibility breakdown:
 
-| Swift Version | Framework Version 
+| Swift Version | Framework Version |
+| ------------- | ----------------- |
+| 3.0	        | master          	|
+| 2.3	        | 1.x          		|
+| 2.
