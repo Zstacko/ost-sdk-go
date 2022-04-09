@@ -70,3 +70,8 @@ In case you love emoji as much as I do, make sure to create your `QRCode` instan
 let qrCode = 🔳("http://example.com")
 ```
 
+## Version Compatibility
+
+Current Swift compatibility breakdown:
+
+| Swift Version | Framework Version 
