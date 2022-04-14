@@ -86,4 +86,10 @@ Current Swift compatibility breakdown:
 
 #### Carthage
 
-Add the following line to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/D
+Add the following line to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile).
+
+```
+github "aschuch/QRCode"
+```
+
+Then run `carthage
