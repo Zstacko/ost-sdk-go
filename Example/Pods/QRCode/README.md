@@ -92,4 +92,14 @@ Add the following line to your [Cartfile](https://github.com/Carthage/Carthage/b
 github "aschuch/QRCode"
 ```
 
-Then run `carthage
+Then run `carthage update`.
+
+#### Cocoapods
+
+Add the following line to your Podfile.
+
+```
+pod "QRCode"
+```
+
+Then r
