@@ -106,4 +106,8 @@ Then run `pod install` with Cocoapods 0.36 or newer.
 
 #### Manually
 
-Just drag and drop the three `.swift` fi
+Just drag and drop the three `.swift` files in the `QRCode` folder into your project.
+
+## Tests
+
+Open the Xcode project and press `⌘-U` to run the te
