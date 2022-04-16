@@ -102,4 +102,8 @@ Add the following line to your Podfile.
 pod "QRCode"
 ```
 
-Then r
+Then run `pod install` with Cocoapods 0.36 or newer.
+
+#### Manually
+
+Just drag and drop the three `.swift` fi
