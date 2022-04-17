@@ -125,4 +125,6 @@ xctool -scheme QRCodeTests -sdk iphonesimulator test
 
 ## Contributing
 
-* Create something awesome, make the code better, add som
+* Create something awesome, make the code better, add some functionality,
+  whatever (this is the hardest part).
+* [Fork it](http://help.github.com/for
