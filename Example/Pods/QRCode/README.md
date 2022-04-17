@@ -110,4 +110,6 @@ Just drag and drop the three `.swift` files in the `QRCode` folder into your pro
 
 ## Tests
 
-Open the Xcode project and press `⌘-U` to run the te
+Open the Xcode project and press `⌘-U` to run the tests.
+
+Alternatively, all tests can be run from the terminal using [xctool](https://github.com/faceb
