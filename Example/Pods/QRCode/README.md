@@ -112,4 +112,12 @@ Just drag and drop the three `.swift` files in the `QRCode` folder into your pro
 
 Open the Xcode project and press `⌘-U` to run the tests.
 
-Alternatively, all tests can be run from the terminal using [xctool](https://github.com/faceb
+Alternatively, all tests can be run from the terminal using [xctool](https://github.com/facebook/xctool).
+
+```bash
+xctool -scheme QRCodeTests -sdk iphonesimulator test
+```
+
+## Todo
+
+* Snapshot Tes
