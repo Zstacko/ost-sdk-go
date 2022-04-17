@@ -120,4 +120,9 @@ xctool -scheme QRCodeTests -sdk iphonesimulator test
 
 ## Todo
 
-* Snapshot Tes
+* Snapshot Tests
+* Support transparent backgrounds
+
+## Contributing
+
+* Create something awesome, make the code better, add som
