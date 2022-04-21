@@ -127,4 +127,7 @@ xctool -scheme QRCodeTests -sdk iphonesimulator test
 
 * Create something awesome, make the code better, add some functionality,
   whatever (this is the hardest part).
-* [Fork it](http://help.github.com/for
+* [Fork it](http://help.github.com/forking/)
+* Create new branch to make your changes
+* Commit all your changes to your branch
+* Submit a [pull 
