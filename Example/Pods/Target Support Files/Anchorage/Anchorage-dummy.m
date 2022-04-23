@@ -1,4 +1,5 @@
 #import <Foundation/Foundation.h>
 @interface PodsDummy_Anchorage : NSObject
 @end
-@impl
+@implementation PodsDummy_Anchorage
+@end
