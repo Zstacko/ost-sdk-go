@@ -136,3 +136,6 @@ xctool -scheme QRCodeTests -sdk iphonesimulator test
 ## Contact
 
 Feel free to get in touch.
+
+* Website: <http://schuch.me>
+* Twitter: [@schuchalexander](http://twitter.com/schuchal
