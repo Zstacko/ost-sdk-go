@@ -130,4 +130,9 @@ xctool -scheme QRCodeTests -sdk iphonesimulator test
 * [Fork it](http://help.github.com/forking/)
 * Create new branch to make your changes
 * Commit all your changes to your branch
-* Submit a [pull 
+* Submit a [pull request](http://help.github.com/pull-requests/)
+
+
+## Contact
+
+Feel free to get in touch.
