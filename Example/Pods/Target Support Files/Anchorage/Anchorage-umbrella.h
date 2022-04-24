@@ -1,3 +1,4 @@
+
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #else
@@ -10,3 +11,6 @@
 #endif
 #endif
 
+
+FOUNDATION_EXPORT double AnchorageVersionNumber;
+FOUNDATION_EXPORT const unsigned char AnchorageVersionString[];
