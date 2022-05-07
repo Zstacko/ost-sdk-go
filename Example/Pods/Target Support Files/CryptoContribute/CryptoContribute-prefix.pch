@@ -5,4 +5,8 @@
 #if defined(__cplusplus)
 #define FOUNDATION_EXPORT extern "C"
 #else
-#define FOUNDATION_EXPOR
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
