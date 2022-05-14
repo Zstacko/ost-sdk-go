@@ -12,4 +12,5 @@
 
 
 FOUNDATION_EXPORT double CryptoContributeVersionNumber;
-FOUNDATI
+FOUNDATION_EXPORT const unsigned char CryptoContributeVersionString[];
+
