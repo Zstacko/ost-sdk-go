@@ -12,4 +12,7 @@
   <string>6.0</string>
   <key>CFBundleName</key>
   <string>${PRODUCT_NAME}</string>
-  <key>CFBund
+  <key>CFBundlePackageType</key>
+  <string>FMWK</string>
+  <key>CFBundleShortVersionString</key>
+  <string>0.1.0</st
