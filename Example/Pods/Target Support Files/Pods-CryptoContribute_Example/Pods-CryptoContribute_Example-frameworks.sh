@@ -9,4 +9,7 @@ if [ -z ${FRAMEWORKS_FOLDER_PATH+x} ]; then
     exit 0
 fi
 
-echo "mkdir -p ${CONFIGURATION_BUILD_DIR}
+echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+
+C
