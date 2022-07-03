@@ -15,4 +15,7 @@ mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 COCOAPODS_PARALLEL_CODE_SIGN="${COCOAPODS_PARALLEL_CODE_SIGN:-false}"
 SWIFT_STDLIB_PATH="${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}"
 
-# Used as a return value for each invo
+# Used as a return value for each invocation of `strip_invalid_archs` function.
+STRIP_BINARY_RETVAL=0
+
+# This protects against multi
