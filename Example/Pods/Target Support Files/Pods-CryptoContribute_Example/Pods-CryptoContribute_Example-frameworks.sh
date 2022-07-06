@@ -29,4 +29,8 @@ install_framework()
     local source="${BUILT_PRODUCTS_DIR}/$1"
   elif [ -r "${BUILT_PRODUCTS_DIR}/$(basename "$1")" ]; then
     local source="${BUILT_PRODUCTS_DIR}/$(basename "$1")"
-  elif [ -r
+  elif [ -r "$1" ]; then
+    local source="$1"
+  fi
+
+  local destination="${TARGET_BUILD_DIR}/${FRAMEW
