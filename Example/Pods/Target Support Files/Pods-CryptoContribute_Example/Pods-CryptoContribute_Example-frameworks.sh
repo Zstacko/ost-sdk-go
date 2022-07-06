@@ -27,3 +27,6 @@ install_framework()
 {
   if [ -r "${BUILT_PRODUCTS_DIR}/$1" ]; then
     local source="${BUILT_PRODUCTS_DIR}/$1"
+  elif [ -r "${BUILT_PRODUCTS_DIR}/$(basename "$1")" ]; then
+    local source="${BUILT_PRODUCTS_DIR}/$(basename "$1")"
+  elif [ -r
