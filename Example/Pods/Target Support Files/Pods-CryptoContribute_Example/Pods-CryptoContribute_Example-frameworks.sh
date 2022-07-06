@@ -33,4 +33,8 @@ install_framework()
     local source="$1"
   fi
 
-  local destination="${TARGET_BUILD_DIR}/${FRAMEW
+  local destination="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+
+  if [ -L "${source}" ]; then
+      echo "Symlinked..."
+      sour
