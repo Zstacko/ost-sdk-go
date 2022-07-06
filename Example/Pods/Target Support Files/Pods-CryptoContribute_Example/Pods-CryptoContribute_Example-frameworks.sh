@@ -23,4 +23,7 @@ STRIP_BINARY_RETVAL=0
 RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 
 # Copies and strips a vendored framework
-install_fr
+install_framework()
+{
+  if [ -r "${BUILT_PRODUCTS_DIR}/$1" ]; then
+    local source="${BUILT_PRODUCTS_DIR}/$1"
