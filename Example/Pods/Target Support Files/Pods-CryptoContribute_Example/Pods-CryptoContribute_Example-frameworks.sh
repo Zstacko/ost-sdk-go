@@ -40,4 +40,5 @@ install_framework()
       source="$(readlink "${source}")"
   fi
 
-  # Use filter instead of exclude so missing patterns don't th
+  # Use filter instead of exclude so missing patterns don't throw errors.
+  echo "rsync --delete -av "${RSYNC_PROTECT_TMP_FILES[@]}" --filter \"- CVS/\" --
