@@ -46,4 +46,6 @@ install_framework()
 
   local basename
   basename="$(basename -s .framework "$1")"
-  binary="${destination}/${basename}.fr
+  binary="${destination}/${basename}.framework/${basename}"
+  if ! [ -r "$binary" ]; then
+    binary="${destination}/${basename}
