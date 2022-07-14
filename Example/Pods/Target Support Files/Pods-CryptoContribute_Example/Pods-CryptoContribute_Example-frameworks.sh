@@ -54,3 +54,7 @@ install_framework()
   # Strip invalid architectures so "fat" simulator / device frameworks work on device
   if [[ "$(file "$binary")" == *"dynamically linked shared library"* ]]; then
     strip_invalid_archs "$binary"
+  fi
+
+  # Resign the code if required by the build settings to avoid unstable apps
+  code_sign_if_enabled "${desti
