@@ -59,4 +59,7 @@ install_framework()
   # Resign the code if required by the build settings to avoid unstable apps
   code_sign_if_enabled "${destination}/$(basename "$1")"
 
-  # Embed linked Swift runtime libraries. No longer necess
+  # Embed linked Swift runtime libraries. No longer necessary as of Xcode 7.
+  if [ "${XCODE_VERSION_MAJOR}" -lt 7 ]; then
+    local swift_runtime_libs
+    swift_
