@@ -62,4 +62,4 @@ install_framework()
   # Embed linked Swift runtime libraries. No longer necessary as of Xcode 7.
   if [ "${XCODE_VERSION_MAJOR}" -lt 7 ]; then
     local swift_runtime_libs
-    swift_
+    swift_runtime_libs=$(xcrun otool -LX "$binary" | grep --color=never @rpath/libswift | sed -E s/@rpath\\/\(.+dylib\).*/\\1/g
