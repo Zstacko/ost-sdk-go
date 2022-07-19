@@ -65,4 +65,10 @@ install_framework()
     swift_runtime_libs=$(xcrun otool -LX "$binary" | grep --color=never @rpath/libswift | sed -E s/@rpath\\/\(.+dylib\).*/\\1/g | uniq -u  && exit ${PIPESTATUS[0]})
     for lib in $swift_runtime_libs; do
       echo "rsync -auv \"${SWIFT_STDLIB_PATH}/${lib}\" \"${destination}\""
-      rsync -auv "${SWIFT_STDLIB_PATH}/${lib}" "${destina
+      rsync -auv "${SWIFT_STDLIB_PATH}/${lib}" "${destination}"
+      code_sign_if_enabled "${destination}/${lib}"
+    done
+  fi
+}
+
+# Copies and strips a vendored d
