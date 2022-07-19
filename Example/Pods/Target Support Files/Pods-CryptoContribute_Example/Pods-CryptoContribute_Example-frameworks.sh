@@ -71,4 +71,8 @@ install_framework()
   fi
 }
 
-# Copies and strips a vendored d
+# Copies and strips a vendored dSYM
+install_dsym() {
+  local source="$1"
+  if [ -r "$source" ]; then
+    # Copy the dSYM into a the tar
