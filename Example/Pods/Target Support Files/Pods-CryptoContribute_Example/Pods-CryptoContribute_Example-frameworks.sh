@@ -75,4 +75,5 @@ install_framework()
 install_dsym() {
   local source="$1"
   if [ -r "$source" ]; then
-    # Copy the dSYM into a the tar
+    # Copy the dSYM into a the targets temp dir.
+    echo "rsync --delete -av "${RSYNC_PROTECT_TMP_FILES[@]}" --filter \"- CVS/\" --
