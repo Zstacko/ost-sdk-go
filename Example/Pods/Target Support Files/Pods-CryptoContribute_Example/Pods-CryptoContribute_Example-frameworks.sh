@@ -80,3 +80,5 @@ install_dsym() {
     rsync --delete -av "${RSYNC_PROTECT_TMP_FILES[@]}" --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "${source}" "${DERIVED_FILES_DIR}"
 
     local basename
+    basename="$(basename -s .framework.dSYM "$source")"
+    binary="${DERIVED_FILES_DIR}/${basename}.framewor
