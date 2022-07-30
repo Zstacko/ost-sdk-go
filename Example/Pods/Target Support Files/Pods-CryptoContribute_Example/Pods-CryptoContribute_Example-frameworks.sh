@@ -81,4 +81,6 @@ install_dsym() {
 
     local basename
     basename="$(basename -s .framework.dSYM "$source")"
-    binary="${DERIVED_FILES_DIR}/${basename}.framewor
+    binary="${DERIVED_FILES_DIR}/${basename}.framework.dSYM/Contents/Resources/DWARF/${basename}"
+
+    # Strip invalid architectures so "fat" s
