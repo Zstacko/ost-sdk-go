@@ -83,4 +83,5 @@ install_dsym() {
     basename="$(basename -s .framework.dSYM "$source")"
     binary="${DERIVED_FILES_DIR}/${basename}.framework.dSYM/Contents/Resources/DWARF/${basename}"
 
-    # Strip invalid architectures so "fat" s
+    # Strip invalid architectures so "fat" simulator / device frameworks work on device
+    if [[ "$(file "$binary")" == *"Mach-O dSYM companion"* ]]; t
