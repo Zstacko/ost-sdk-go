@@ -88,4 +88,6 @@ install_dsym() {
       strip_invalid_archs "$binary"
     fi
 
-    if [[ $STRIP_BINARY_RETVAL == 1 ]]; 
+    if [[ $STRIP_BINARY_RETVAL == 1 ]]; then
+      # Move the stripped file into its final destination.
+      echo "rsync --delete -av "${RSYNC_PROT
