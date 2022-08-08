@@ -99,4 +99,6 @@ install_dsym() {
   fi
 }
 
-# Signs a fra
+# Signs a framework with the provided identity
+code_sign_if_enabled() {
+  if [ -n "${EXPANDED_CODE_SIGN_IDENT
