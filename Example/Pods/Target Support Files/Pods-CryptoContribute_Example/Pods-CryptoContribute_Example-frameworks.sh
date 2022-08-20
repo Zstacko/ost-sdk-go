@@ -109,4 +109,11 @@ code_sign_if_enabled() {
     if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
       code_sign_cmd="$code_sign_cmd &"
     fi
-    echo "
+    echo "$code_sign_cmd"
+    eval "$code_sign_cmd"
+  fi
+}
+
+# Strip invalid architectures
+strip_invalid_archs() {
+  b
