@@ -118,4 +118,5 @@ code_sign_if_enabled() {
 strip_invalid_archs() {
   binary="$1"
   # Get architectures for current target binary
-  binary_archs="$(lipo -info "$binary" 
+  binary_archs="$(lipo -info "$binary" | rev | cut -d ':' -f1 | awk '{$1=$1;print}' | rev)"
+  # Intersect them with the architectures 
