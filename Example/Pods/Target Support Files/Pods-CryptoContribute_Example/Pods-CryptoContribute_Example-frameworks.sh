@@ -116,4 +116,6 @@ code_sign_if_enabled() {
 
 # Strip invalid architectures
 strip_invalid_archs() {
-  b
+  binary="$1"
+  # Get architectures for current target binary
+  binary_archs="$(lipo -info "$binary" 
