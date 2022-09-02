@@ -124,4 +124,9 @@ strip_invalid_archs() {
   # If there are no archs supported by this binary then warn the user
   if [[ -z "$intersected_archs" ]]; then
     echo "warning: [CP] Vendored binary '$binary' contains architectures ($binary_archs) none of which match the current build architectures ($ARCHS)."
-    STRI
+    STRIP_BINARY_RETVAL=0
+    return
+  fi
+  stripped=""
+  for arch in $binary_archs; do
+    if ! [[ "${ARCHS}" 
