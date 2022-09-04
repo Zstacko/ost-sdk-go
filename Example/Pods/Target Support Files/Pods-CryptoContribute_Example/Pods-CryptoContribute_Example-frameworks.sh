@@ -129,4 +129,6 @@ strip_invalid_archs() {
   fi
   stripped=""
   for arch in $binary_archs; do
-    if ! [[ "${ARCHS}" 
+    if ! [[ "${ARCHS}" == *"$arch"* ]]; then
+      # Strip non-valid architectures in-place
+      lipo -remove "$arch" 
