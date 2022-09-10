@@ -145,4 +145,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/CryptoContribute/CryptoContribute.framework"
-  install_framewo
+  install_framework "${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  ins
