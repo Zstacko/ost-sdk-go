@@ -138,4 +138,9 @@ strip_invalid_archs() {
   if [[ "$stripped" ]]; then
     echo "Stripped $binary of architectures:$stripped"
   fi
-  STRIP_BINARY
+  STRIP_BINARY_RETVAL=1
+}
+
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.
