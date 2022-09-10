@@ -135,4 +135,7 @@ strip_invalid_archs() {
       stripped="$stripped $arch"
     fi
   done
-  if [[ "$
+  if [[ "$stripped" ]]; then
+    echo "Stripped $binary of architectures:$stripped"
+  fi
+  STRIP_BINARY
