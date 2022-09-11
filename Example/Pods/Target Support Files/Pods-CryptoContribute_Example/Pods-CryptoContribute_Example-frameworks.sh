@@ -148,4 +148,5 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  ins
+  install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework"
+  install_framework "${BUILT_P
