@@ -149,4 +149,5 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Anchorage/Anchorage.framework"
-  install_framework "${BUILT_P
+  install_framework "${BUILT_PRODUCTS_DIR}/CryptoContribute/CryptoContribute.framework"
+  install_framework "
