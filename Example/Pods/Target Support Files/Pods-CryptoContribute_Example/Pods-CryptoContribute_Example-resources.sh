@@ -9,4 +9,6 @@ if [ -z ${UNLOCALIZED_RESOURCES_FOLDER_PATH+x} ]; then
     exit 0
 fi
 
-mkd
+mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
+
+RESOURCES_TO_COPY=${PODS_ROOT}/resour
