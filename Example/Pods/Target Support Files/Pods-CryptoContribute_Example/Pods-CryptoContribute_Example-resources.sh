@@ -11,4 +11,9 @@ fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 
-RESOURCES_TO_COPY=${PODS_ROOT}/resour
+RESOURCES_TO_COPY=${PODS_ROOT}/resources-to-copy-${TARGETNAME}.txt
+> "$RESOURCES_TO_COPY"
+
+XCASSET_FILES=()
+
+# This protects against multi
