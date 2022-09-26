@@ -16,4 +16,5 @@ RESOURCES_TO_COPY=${PODS_ROOT}/resources-to-copy-${TARGETNAME}.txt
 
 XCASSET_FILES=()
 
-# This protects against multi
+# This protects against multiple targets copying the same framework dependency at the same time. The solution
+# was ori
