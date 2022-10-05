@@ -18,4 +18,8 @@ XCASSET_FILES=()
 
 # This protects against multiple targets copying the same framework dependency at the same time. The solution
 # was originally proposed here: https://lists.samba.org/archive/rsync/2008-February/020158.html
-RSYNC_PROTECT_TMP_FILES=
+RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
+
+case "${TARGETED_DEVICE_FAMILY:-}" in
+  1,2)
+    TARGET_DEVICE_ARGS
