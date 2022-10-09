@@ -28,3 +28,7 @@ case "${TARGETED_DEVICE_FAMILY:-}" in
     TARGET_DEVICE_ARGS="--target-device iphone"
     ;;
   2)
+    TARGET_DEVICE_ARGS="--target-device ipad"
+    ;;
+  3)
+    TARGET_DEVICE_ARGS="--target-device tv
