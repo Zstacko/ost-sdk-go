@@ -22,4 +22,9 @@ RSYNC_PROTECT_TMP_FILES=(--filter "P .*.??????")
 
 case "${TARGETED_DEVICE_FAMILY:-}" in
   1,2)
-    TARGET_DEVICE_ARGS
+    TARGET_DEVICE_ARGS="--target-device ipad --target-device iphone"
+    ;;
+  1)
+    TARGET_DEVICE_ARGS="--target-device iphone"
+    ;;
+  2)
