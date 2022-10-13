@@ -37,4 +37,10 @@ case "${TARGETED_DEVICE_FAMILY:-}" in
     TARGET_DEVICE_ARGS="--target-device watch"
     ;;
   *)
-    TARGET_DEVIC
+    TARGET_DEVICE_ARGS="--target-device mac"
+    ;;
+esac
+
+install_resource()
+{
+  if [[ "$1" = /* ]]
