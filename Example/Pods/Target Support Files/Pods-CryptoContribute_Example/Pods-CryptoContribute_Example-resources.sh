@@ -43,4 +43,9 @@ esac
 
 install_resource()
 {
-  if [[ "$1" = /* ]]
+  if [[ "$1" = /* ]] ; then
+    RESOURCE_PATH="$1"
+  else
+    RESOURCE_PATH="${PODS_ROOT}/$1"
+  fi
+  if [[ ! -
