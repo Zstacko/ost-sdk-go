@@ -48,4 +48,6 @@ install_resource()
   else
     RESOURCE_PATH="${PODS_ROOT}/$1"
   fi
-  if [[ ! -
+  if [[ ! -e "$RESOURCE_PATH" ]] ; then
+    cat << EOM
+error: Resource "$RESOURCE_PATH" not found. Run 'pod install' to upda
