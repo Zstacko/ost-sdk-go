@@ -55,4 +55,5 @@ EOM
     exit 1
   fi
   case $RESOURCE_PATH in
-    *.storyboar
+    *.storyboard)
+      echo "ibtool --reference-external-strings-file --errors --warnings --n
