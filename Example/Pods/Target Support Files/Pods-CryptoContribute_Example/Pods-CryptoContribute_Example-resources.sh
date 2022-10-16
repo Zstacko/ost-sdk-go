@@ -50,4 +50,9 @@ install_resource()
   fi
   if [[ ! -e "$RESOURCE_PATH" ]] ; then
     cat << EOM
-error: Resource "$RESOURCE_PATH" not found. Run 'pod install' to upda
+error: Resource "$RESOURCE_PATH" not found. Run 'pod install' to update the copy resources script.
+EOM
+    exit 1
+  fi
+  case $RESOURCE_PATH in
+    *.storyboar
