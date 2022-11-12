@@ -71,4 +71,6 @@ EOM
       ;;
     *.xcdatamodel)
       echo "xcrun momc \"$RESOURCE_PATH\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename "$RESOURCE_PATH"`.mom\"" || true
-      xcrun momc "$RESOURCE_PATH" "${TARGET_BUILD_DIR}/${UNL
+      xcrun momc "$RESOURCE_PATH" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename "$RESOURCE_PATH" .xcdatamodel`.mom"
+      ;;
+    *.xc
