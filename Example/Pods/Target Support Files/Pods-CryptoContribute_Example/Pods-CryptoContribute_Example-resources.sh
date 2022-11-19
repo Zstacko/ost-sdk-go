@@ -87,3 +87,9 @@ EOM
       ;;
     *)
       echo "$RESOURCE_PATH" || true
+      echo "$RESOURCE_PATH" >> "$RESOURCES_TO_COPY"
+      ;;
+  esac
+}
+
+mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_
