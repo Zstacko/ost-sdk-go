@@ -82,4 +82,8 @@ EOM
       xcrun mapc "$RESOURCE_PATH" "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/`basename "$RESOURCE_PATH" .xcmappingmodel`.cdm"
       ;;
     *.xcassets)
-      ABSOLUTE_XCASSET_FILE="$RESOURCE_
+      ABSOLUTE_XCASSET_FILE="$RESOURCE_PATH"
+      XCASSET_FILES+=("$ABSOLUTE_XCASSET_FILE")
+      ;;
+    *)
+      echo "$RESOURCE_PATH" || true
