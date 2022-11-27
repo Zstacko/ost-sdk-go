@@ -100,4 +100,6 @@ if [[ "${ACTION}" == "install" ]] && [[ "${SKIP_INSTALL}" == "NO" ]]; then
 fi
 rm -f "$RESOURCES_TO_COPY"
 
-if [[ -n "${WRAPPER_EXT
+if [[ -n "${WRAPPER_EXTENSION}" ]] && [ "`xcrun --find actool`" ] && [ -n "${XCASSET_FILES:-}" ]
+then
+  # Find all other xcassets
