@@ -110,4 +110,5 @@ then
     fi
   done <<<"$OTHER_XCASSETS"
 
-  if [ -z
+  if [ -z ${ASSETCATALOG_COMPILER_APPICON_NAME+x} ]; then
+    printf "%s\0" "${XCASSET_FILES[@]}" | xargs -0 xcru
