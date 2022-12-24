@@ -5,4 +5,10 @@
 #if defined(__cplusplus)
 #define FOUNDATION_EXPORT extern "C"
 #else
-#define FOUNDATIO
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
+
+
+FOUNDATION_EXPORT double Pods_CryptoContribute_Example
