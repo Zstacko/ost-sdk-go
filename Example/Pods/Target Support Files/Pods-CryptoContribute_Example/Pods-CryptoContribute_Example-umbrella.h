@@ -11,4 +11,5 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_CryptoContribute_Example
+FOUNDATION_EXPORT double Pods_CryptoContribute_ExampleVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_CryptoContribute_ExampleVersionString[]
