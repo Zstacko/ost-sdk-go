@@ -12,4 +12,5 @@
 
 
 FOUNDATION_EXPORT double Pods_CryptoContribute_ExampleVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_CryptoContribute_ExampleVersionString[]
+FOUNDATION_EXPORT const unsigned char Pods_CryptoContribute_ExampleVersionString[];
+
