@@ -1,1 +1,4 @@
-framework module Pods_Crypto
+framework module Pods_CryptoContribute_Example {
+  umbrella header "Pods-CryptoContribute_Example-umbrella.h"
+
+  export 
