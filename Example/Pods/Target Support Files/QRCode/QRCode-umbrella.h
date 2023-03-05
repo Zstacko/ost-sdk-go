@@ -11,4 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double QRCodeVers
+FOUNDATION_EXPORT double QRCodeVersionNumber;
+FOUNDATION_EXPORT const unsigned char QRCodeVersionString[];
+
